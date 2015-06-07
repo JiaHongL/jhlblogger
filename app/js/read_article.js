@@ -1,4 +1,4 @@
-myApp.controller('read_articleCtrl', ['$rootScope','$scope','blogger','$location','$stateParams',function ($rootScope,$scope,blogger,$location,$stateParams) {
+myApp.controller('read_articleCtrl', ['$rootScope','$scope','blogger','$location','$stateParams','$sce',function ($rootScope,$scope,blogger,$location,$stateParams,$sce) {
 
 $('#myButton').on('click', function () {
     var $btn = $(this).button('loading')
@@ -43,5 +43,7 @@ $scope.message_post = function(name,message) {
 		});
 	}
 };
-
+$scope.trustAsHtml = function(string) {
+    return $sce.trustAsHtml(string);
+};
 }]);

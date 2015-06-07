@@ -12,7 +12,7 @@
           <td class="success">
               <span class="glyphicon glyphicon-trash" aria-hidden="true" ng-click="delete_edit_tip(list.objectId)"></span>   
           </td>
-          <td class="info">{{list.title}}</td>
+          <td class="info" ng-click="edit_view(list.objectId)">{{list.title}}</td>
           <td class="info">
             <span class="glyphicon glyphicon-tags" aria-hidden="true">{{' '+list.class}}
             </span>   

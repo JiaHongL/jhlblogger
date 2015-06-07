@@ -1,4 +1,4 @@
-myApp.controller('class_pageCtrl', ['$rootScope','$scope','blogger','$location','$stateParams',function ($rootScope,$scope,blogger,$location,$stateParams) {
+myApp.controller('class_pageCtrl', ['$rootScope','$scope','blogger','$location','$stateParams','$sce',function ($rootScope,$scope,blogger,$location,$stateParams,$sce) {
 	// console.log($stateParams.class);
 var get_page = 1;
 var all_limit = 0; 
@@ -52,5 +52,8 @@ $scope.classpage(1);
   // 	console.log(res);
   // 	$scope.article_list=res.data.results;
   // });
+$scope.trustAsHtml = function(string) {
+    return $sce.trustAsHtml(string);
+};
 
 }]);

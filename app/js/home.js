@@ -53,7 +53,9 @@ $scope.photopage(1);
 //   return $sce.trustAsHtml(Html_text)
 // };
 
-
+$scope.trustAsHtml = function(string) {
+    return $sce.trustAsHtml(string);
+};
 
 
 }]);

@@ -34,10 +34,10 @@
 
 
 
-.hiddenOverFlow {
-   // width:200px;
-   height:150px;   
-   overflow:hidden;         /*--設定超出的內容隱藏, IE, FireFox通用--*/
-   text-overflow:ellipsis;  /*--(IE專用)在內容超出時,在後方補上逗號--*/
-   white-space:nowrap; /*-- 設定內容強制顯示一行,直到內容結束或<br>--*/
-}
+// .hiddenOverFlow {
+//    // width:200px;
+//    height:150px;   
+//    overflow:hidden;         --設定超出的內容隱藏, IE, FireFox通用--
+//    text-overflow:ellipsis;  /*--(IE專用)在內容超出時,在後方補上逗號--*/
+//    white-space:nowrap; /*-- 設定內容強制顯示一行,直到內容結束或<br>--*/
+// }
