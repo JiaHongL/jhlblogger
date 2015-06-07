@@ -1,4 +1,4 @@
-myApp.controller('homeCtrl', ['$scope','blogger', function ($scope,blogger) {
+myApp.controller('homeCtrl', ['$scope','blogger','$sce', function ($scope,blogger,$sce) {
 var get_page = 1;
 var all_limit = 0; 
 var get_limit =0; 
@@ -6,6 +6,7 @@ var get_load_page = 1;
 var get_max_page = 0;
 var delete_objectid = '';  
 var edit_objectid = ''
+
 
 //取得頁碼
 $scope.get_now_edit_page = function() {
@@ -47,15 +48,19 @@ $scope.photopage = function(page) {
 $scope.photopage(1);
 
 
+// $scope.trustAsHtml_text = function(Html_text) {
+//   // alert($sce.trustAsHtml(Html_text));
+//   return $sce.trustAsHtml(Html_text)
+// };
+
+
+
 
 }]);
 
 
-myApp.directive('gettag', [function() {
-	return {
-		restrict: 'A',
-		link: function (scope, iElement, iAttrs) {
-		}
-	};
-}])
+
+
+
+
 
