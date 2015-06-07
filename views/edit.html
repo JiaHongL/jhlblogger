@@ -1,0 +1,97 @@
+<div class="edit1" ng-if="edit_view_status=='edit1'">
+  <div class="table">
+    <table class="table table-bordered " >
+        <tr class="active">
+          <th>刪除</th>
+          <th>標題</th>
+          <th>類別</th>
+          <th>時間</th>
+          <th>編輯</th>
+        </tr>
+        <tr ng-repeat="list in article_list">
+          <td class="success">
+              <span class="glyphicon glyphicon-trash" aria-hidden="true" ng-click="delete_edit_tip(list.objectId)"></span>   
+          </td>
+          <td class="info">{{list.title}}</td>
+          <td class="info">
+            <span class="glyphicon glyphicon-tags" aria-hidden="true">{{' '+list.class}}
+            </span>   
+          </td>
+          <td class="info">
+             <span class="glyphicon glyphicon-time" aria-hidden="true">{{' '+list.updatedAt}}
+             </span>  
+          </td>
+          <td class="warning">
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true" ng-click="edit_view(list.objectId)"></span>
+          </td>
+        </tr>
+    </table>
+  </div>  
+  <div class="row bottom_page">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-6">
+        <ul class="pagination pagination" ng-repeat="list in page">
+        <li><a href="#" ng-click="photopage(list.page)">{{list.page}}</a></li>
+      </ul>
+      </div>
+      <div class="col-md-2">
+      </div>
+  </div>  
+</div>
+
+<div id="myModal" class="modal fade bs-example-modal-sm tip" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="gridSystemModalLabel">確定刪除文章？</h4>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="delete_edit_button()">delete</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="edit2" ng-show="edit_view_status=='edit2'">
+    <div class="row title">
+      <div class="col-md-1">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+            {{dropdown_value}}
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a class="item" role="menuitem" tabindex="-1" href="#"ng-click="dropdown()">db</a></li>
+            <li role="presentation"><a class="item" role="menuitem" tabindex="-1" href="#"ng-click="dropdown()">jquery</a></li>
+            <li role="presentation"><a class="item" role="menuitem" tabindex="-1" href="#"ng-click="dropdown()">angular</a></li>
+            <li role="presentation"><a class="item" role="menuitem" tabindex="-1" href="#"ng-click="dropdown()">Other</a></li>
+          </ul>
+        </div>
+      </div> 
+<!--       <div class="col-md-2">
+        <div id="datepicker" class="input-group date div_data" data-date-format="yyyy-mm-dd ">
+            <input class="form-control" type="text" ng-model="time" readonly />
+            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+        </div>
+      </div>  -->     
+      <div class="col-md-11">
+        <input type="text" class="form-control" id="title" ng-model="title" placeholder="title">
+      </div>
+    </div>     
+    <div> 
+         <textarea ui-tinymce="tinymceOptions" name="content" ng-model="tinymceModel"></textarea>
+    </div>
+    <div class="submit">
+        <button class="btn btn-default" type="submit" ng-click="get_value()" >Button</button>
+    </div>
+</div>
+
+
+
+
+

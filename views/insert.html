@@ -1,0 +1,36 @@
+<div class="insert">
+    <div class="row title">
+      <div class="col-md-1">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+            {{dropdown_value}}
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a class="item" role="menuitem" tabindex="-1" href="#"ng-click="dropdown()">db</a></li>
+            <li role="presentation"><a class="item" role="menuitem" tabindex="-1" href="#"ng-click="dropdown()">jquery</a></li>
+            <li role="presentation"><a class="item" role="menuitem" tabindex="-1" href="#"ng-click="dropdown()">angular</a></li>
+            <li role="presentation"><a class="item" role="menuitem" tabindex="-1" href="#"ng-click="dropdown()">other</a></li>
+          </ul>
+        </div>
+      </div> 
+<!--       <div class="col-md-2">
+        <div id="datepicker" class="input-group date div_data" data-date-format="yyyy-mm-dd ">
+            <input class="form-control" type="text" ng-model="time" readonly />
+            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+        </div>
+      </div>  -->     
+      <div class="col-md-11">
+        <input type="text" class="form-control" id="title" ng-model="title" placeholder="title">
+      </div>
+    </div>     
+    <div> 
+         <textarea ui-tinymce="tinymceOptions" name="content" ng-model="tinymceModel"></textarea>
+    </div>
+    <div class="submit">
+        <button class="btn btn-default" type="submit" ng-click="get_value()" >Button</button>
+    </div>
+</div>
+
+
+

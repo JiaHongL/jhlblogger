@@ -1,0 +1,28 @@
+.edit1{
+	.table th, .table td { 
+		text-align: center; 
+	}
+	.bottom_page{
+		text-align:center;
+	}
+	
+}
+
+
+.edit2{
+	.title{
+		margin-bottom:1%;
+	}
+	label{
+		margin-left: 20px;
+	}
+	#datepicker{
+		// width:200px; 
+		// margin: 0;
+		// margin-left:-10px;
+	}
+	#datepicker > span:hover{cursor: pointer;}
+	.submit{
+		margin-top:0.5%;
+	}
+}

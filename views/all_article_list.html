@@ -1,0 +1,10 @@
+<div class="all_article_list">
+	<div class="d_title">
+		<h1>全部文章</h1>
+	</div>
+	<div ng-repeat="list in article_list " class="list">
+		<div class="d_time">
+			<a href="#/read_article/{{list.objectId}}">{{list.createdAt| date : 'yyyy-MM-dd'}} {{list.title}}</a>
+		</div>	
+	</div>
+<div>

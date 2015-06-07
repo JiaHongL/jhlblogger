@@ -1,0 +1,43 @@
+.class_page{
+	.list{
+		border-bottom: 1px dashed #dcdcdc;
+		margin-bottom:1%;
+		.d_title{
+			a{
+			color: #369;
+			font-size: 18px;
+			height: 32px;
+			line-height: 32px;
+			font-weight: normal;
+			}	
+		}
+		.d_time{
+			color: #666;
+		    line-height: 26px;
+		}
+		.d_article{
+		    
+		
+		}
+		.d_read{
+			color: #666;
+		    // line-height: 26px;
+			text-align:right;
+			margin-right:5%;
+		}
+	}
+	.bottom_page{
+		text-align:center;
+	}
+}
+
+
+
+
+.hiddenOverFlow {
+   // width:200px;
+   height:150px;   
+   overflow:hidden;         /*--設定超出的內容隱藏, IE, FireFox通用--*/
+   text-overflow:ellipsis;  /*--(IE專用)在內容超出時,在後方補上逗號--*/
+   white-space:nowrap; /*-- 設定內容強制顯示一行,直到內容結束或<br>--*/
+}

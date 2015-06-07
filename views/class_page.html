@@ -1,0 +1,32 @@
+<div class="class_page">
+	<div ng-repeat="list in article_list " class="list">
+		<div class="d_title">
+			<a href="#/read_article/{{list.objectId}}">{{list.title}}</a>
+		</div>
+		<div class="d_time">
+			<h5 class="d21">作者：JHL 時間：{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}  標籤：
+				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 
+				 <a>{{list.class}}</a>
+			</h5>
+		</div>	
+		<div class="d_article">
+			<div  class="hiddenOverFlow d31" ng-bind-html="list.article" >
+			</div>
+		</div>
+		<div class="d_read">
+			<a href="#/read_article/{{list.objectId}}"><p>...閱讀全文</p></a>
+		</div>	
+	</div>
+	<div class="row bottom_page">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-6">
+        <ul class="pagination pagination" ng-repeat="list in page">
+        <li><a href="#" ng-click="classpage(list.page)">{{list.page}}</a></li>
+      </ul>
+      </div>
+      <div class="col-md-2">
+      </div>
+  </div>
+</div>
+    
