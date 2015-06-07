@@ -1,0 +1,42 @@
+<div class="read_article">
+	<div ng-repeat="list in article_list " class="list">
+		<div class="d_title">
+			<h1>{{list.title}}</h1>
+		</div>
+		
+		<div class="d_article">
+			<div  class="d31" ng-bind-html="list.article" >
+			</div>
+		</div>
+		<div class="d_time">
+			<h5 class="d21">作者：JHL 時間：{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}  標籤：
+				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 
+				 <a href="#/class_page/{{list.class}}">{{list.class}}</a>
+			</h5>
+		</div>	
+	</div>
+	<div class="message_post">
+		<form ng-submit="message_post(username,message)">
+		  <div class="form-group">
+	    	<input type="test" class="form-control" id="exampleInputEmail1" placeholder="訪客" ng-model="username">	    
+		  </div>
+		  <div class="form-group">
+		    <textarea class="form-control" rows="3" placeholder="Message..." ng-model="message"></textarea>
+		  </div>
+		  <button type="submit" id="myButton" class="btn btn-primary  active" data-loading-text="Loading..." autocomplete="off">回覆 <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+		</form>		
+	</div>
+	<div class="message_list" ng-repeat="list in message_list ">
+		<div class="message_item">
+			<h1>#{{$index+1}}</h1>
+			<span class="glyphicon glyphicon-user" aria-hidden="true">{{list.name}}</span>
+			<p>{{list.createdAt| date : 'yyyy-MM-dd hh:mm:ss'}}<p>
+			<textarea disabled='disabled'  rows="3">{{list.message}}</textarea>
+			<span class="glyphicon glyphicon-share-alt" aria-hidden="true">
+				<textarea disabled='disabled'>{{list.reply_message||' 尚未回覆'}}</textarea>
+			</span>	
+		</div>
+	</div>
+</div>
+
+
