@@ -9,7 +9,7 @@ myApp.controller('loginCtrl', ['$rootScope','$scope','blogger','$location',funct
 			}
 			else{
 				$rootScope.$login_stage = 'login';
-				$location.path("/edit_about");
+				$location.path("/edit");
 			}
 		});
 	}
