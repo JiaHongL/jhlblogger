@@ -132,16 +132,28 @@ blogger.all_photo_api().then(function(res){
 $scope.tinymceOptions = {
     theme: "modern",
     plugins: [
-        "advlist autolink lists link image charmap print preview hr anchor pagebreak",
-        "searchreplace wordcount visualblocks visualchars code fullscreen",
-        "insertdatetime media nonbreaking save table contextmenu directionality",
-        "emoticons template paste textcolor"
+         "advlist autolink autosave link image lists charmap print preview hr anchor pagebreak spellchecker",
+                "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+                "table contextmenu directionality emoticons template textcolor paste fullpage textcolor colorpicker textpattern"
     ],
     image_list: function(success) {
         success($scope.all_photo_url);
     },
-    toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-    toolbar2: "print preview media | forecolor backcolor emoticons",
+    toolbar1: "newdocument fullpage | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | styleselect formatselect fontselect fontsizeselect",
+        toolbar2: "cut copy paste | searchreplace | bullist numlist | outdent indent blockquote | undo redo | link unlink anchor image media code | insertdatetime preview | forecolor backcolor",
+        toolbar3: "table | hr removeformat | subscript superscript | charmap emoticons | print fullscreen | ltr rtl | spellchecker | visualchars visualblocks nonbreaking template pagebreak restoredraft",
+    // toolbar_items_size: 'small',
+        extended_valid_elements : "video[controls|preload|width|height|data-setup],source[src|type]",
+
+        style_formats: [
+                {title: 'Bold text', inline: 'b'},
+                {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}},
+                {title: 'Red header', block: 'h1', styles: {color: '#ff0000'}},
+                {title: 'Example 1', inline: 'span', classes: 'example1'},
+                {title: 'Example 2', inline: 'span', classes: 'example2'},
+                {title: 'Table styles'},
+                {title: 'Table row 1', selector: 'tr', classes: 'tablerow1'}
+        ],
     image_advtab: true,
     height: "400px",
     // width: "650px"

@@ -712,46 +712,47 @@ img {
 .read_article .list {
   border: 1px dashed #dcdcdc;
   margin-bottom: 1%;
-  padding: 2% 10% 2% 10%;
+  margin-top: 1%;
+  padding: 5% 5% 2% 5%;
 }
-/* line 7, ../sass/partials/_read_article.scss */
+/* line 8, ../sass/partials/_read_article.scss */
 .read_article .list .d_title {
   text-align: center;
   padding-bottom: 5%;
 }
-/* line 10, ../sass/partials/_read_article.scss */
+/* line 11, ../sass/partials/_read_article.scss */
 .read_article .list .d_title .h1 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
-/* line 16, ../sass/partials/_read_article.scss */
+/* line 17, ../sass/partials/_read_article.scss */
 .read_article .list .d_time {
   text-align: right;
   color: #666;
   line-height: 26px;
   padding-bottom: 0%;
 }
-/* line 26, ../sass/partials/_read_article.scss */
+/* line 27, ../sass/partials/_read_article.scss */
 .read_article .message_post {
   margin: 0% 10% 0% 10%;
   text-align: right;
 }
-/* line 31, ../sass/partials/_read_article.scss */
+/* line 32, ../sass/partials/_read_article.scss */
 .read_article .message_list textarea {
-  width: 80%;
+  width: 90%;
   border: 0;
   overflow-y: auto;
   /* IE */
   resize: none;
   /* Firefox, Chrome */
 }
-/* line 38, ../sass/partials/_read_article.scss */
+/* line 39, ../sass/partials/_read_article.scss */
 .read_article .message_list textarea:focus {
   outline: 0;
   /* Chrome */
 }
-/* line 41, ../sass/partials/_read_article.scss */
+/* line 42, ../sass/partials/_read_article.scss */
 .read_article .message_list .message_item {
   padding-bottom: 1%;
 }

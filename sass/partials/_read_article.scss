@@ -2,7 +2,8 @@
 	.list{
 		border: 1px dashed #dcdcdc;
 		margin-bottom:1%;
-		padding: 2% 10% 2% 10%;
+		margin-top:1%;
+		padding: 5% 5% 2% 5%;
 
 		.d_title{
 			text-align:center;
@@ -30,7 +31,7 @@
 	.message_list{
 		textarea {
 		  // height:100px;
-		  width:80%;
+		  width:90%;
 		  border : 0;
 		  overflow-y : auto; /* IE */
 		  resize : none; /* Firefox, Chrome */
