@@ -198,7 +198,7 @@ myApp.factory('blogger',  [
 					params:{
 					limit:limit,
 					skip:start_skip,
-					order:'createdAt',	
+					order:'-createdAt',	
 					},
 				}).then(function(res) {
 		   			return res;
@@ -325,7 +325,7 @@ myApp.factory('blogger',  [
 					where:{"class":class2},
 					limit:limit,
 					skip:start_skip,
-					order:'createdAt',	
+					order:'-createdAt',	
 					},
 				}).then(function(res) {
 		   			return res;
@@ -440,7 +440,7 @@ myApp.factory('blogger',  [
 					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
 					},
 					params:{
-					order:'createdAt',	
+					order:'-createdAt',	
 					},
 				}).then(function(res) {
 					return res;

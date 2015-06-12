@@ -15,7 +15,7 @@
 			</h5>
 		</div>	
 	</div>
-	<div class="message_post">
+	<div class="message_post ">
 		<form ng-submit="message_post(username,message)">
 		  <div class="form-group">
 	    	<input type="test" class="form-control" id="exampleInputEmail1" placeholder="訪客" ng-model="username">	    
@@ -26,7 +26,7 @@
 		  <button type="submit" id="myButton" class="btn btn-primary  active" data-loading-text="Loading..." autocomplete="off">回覆 <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
 		</form>		
 	</div>
-	<div class="message_list" ng-repeat="list in message_list ">
+	<div class="message_list " ng-repeat="list in message_list ">
 		<div class="message_item">
 			<h1>#{{$index+1}}</h1>
 			<span class="glyphicon glyphicon-user" aria-hidden="true">{{list.name}}</span>
