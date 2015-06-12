@@ -362,6 +362,22 @@ footer {
   text-shadow: 1px 1px 1px #FFF;
 }
 
+/* line 45, ../sass/partials/_page.scss */
+img {
+  display: inline-block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
 /* line 7, ../../Desktop/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .ir {
   background-color: transparent;
