@@ -344,7 +344,12 @@ body, select, input, textarea {
   color: #222222;
 }
 
-/* line 28, ../sass/partials/_page.scss */
+/* line 17, ../sass/partials/_page.scss */
+body {
+  font-family: 'comic sans ms', sans-serif;
+}
+
+/* line 29, ../sass/partials/_page.scss */
 footer {
   position: fixed;
   height: 10%;
@@ -550,20 +555,21 @@ footer {
   margin-right: auto;
   margin-left: auto;
   margin-top: 2%;
+  margin-bottom: 2%;
 }
-/* line 8, ../sass/partials/_about.scss */
+/* line 9, ../sass/partials/_about.scss */
 .out .blush img {
   width: 200px;
   height: 200px;
 }
-/* line 14, ../sass/partials/_about.scss */
+/* line 15, ../sass/partials/_about.scss */
 .out .about_web {
   width: 300px;
   margin-top: 2%;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 15, ../sass/partials/_about.scss */
+/* line 16, ../sass/partials/_about.scss */
 .out .about_web h1 {
   text-align: center;
 }
