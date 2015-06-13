@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ['ui.router','ui.tinymce','readMore','ngSanitize','angulartics', 'angulartics.google.analytics']); 
 
-myApp.config(function($stateProvider, $urlRouterProvider) {
+myApp.config(function($stateProvider, $urlRouterProvider,$analyticsProvider) {
 
     $urlRouterProvider.otherwise('/home');
     $stateProvider
