@@ -4,7 +4,7 @@
 	</div>
 	<div ng-repeat="list in article_list " class="list">
 		<div class="d_time">
-			<a href="#/read_article/{{list.objectId}}" analytics-on="click" analytics-event="{{list.title}}">{{list.createdAt| date : 'yyyy-MM-dd'}} {{list.title}}</a>
+			<a href="#/read_article/{{list.objectId}}" analytics-on="click" analytics-event="點擊文章" analytics-label="{{list.title}}">{{list.createdAt| date : 'yyyy-MM-dd'}} {{list.title}}</a>
 		</div>	
 	</div>
 <div>
