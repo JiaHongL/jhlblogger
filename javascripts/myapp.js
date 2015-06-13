@@ -59,5 +59,10 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/all_article_list.html',
             controller: 'all_article_listCtrl'
         })
+          .state('message', {
+            url: '/message',
+            templateUrl: 'views/message.html',
+            controller: 'messageCtrl'
+        })
           
 });

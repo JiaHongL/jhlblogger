@@ -83,7 +83,7 @@ $scope.uploadFile2 = function() {
 //刪除照片
 $scope.deletephoto = function(id,objectid) {
   blogger.delete_photo_api(objectid).then(function(res){
-    // console.log(res);
+    console.log(res);
     $scope.get_now_photo_count();
     $scope.get_now_photo_page();
     $scope.photopage_det();
