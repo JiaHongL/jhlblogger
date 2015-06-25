@@ -46,4 +46,7 @@ $scope.message_post = function(name,message) {
 $scope.trustAsHtml = function(string) {
     return $sce.trustAsHtml(string);
 };
+
+
+
 }]);

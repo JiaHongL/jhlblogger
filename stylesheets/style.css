@@ -367,6 +367,16 @@ footer {
   text-shadow: 1px 1px 1px #FFF;
 }
 
+/* line 59, ../sass/partials/_page.scss */
+#gotop {
+  display: none;
+  position: fixed;
+  right: 1%;
+  bottom: 45%;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
 /* line 7, ../../Desktop/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .ir {
   background-color: transparent;
