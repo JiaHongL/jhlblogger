@@ -9,12 +9,22 @@
 			</div>
 		</div>
 		<div class="d_time">
-			<h5 class="d21">作者：JHL 時間：{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}  標籤：
+			<h5 class="d21">
+				<a href="https://www.facebook.com/sharer/sharer.php?u=http://jiahongl.github.io/jhlblogger/%23/read_article/{{list.objectId}}"> <i class="fa fa-facebook-square"> Share </i></a>
+				&nbsp;&nbsp;  
+				<i class="fa fa-user-secret"></i>  
+				作者：JHL  
+				&nbsp;
+				<i class="fa fa-clock-o"></i>
+				時間：{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}  
+				&nbsp;
+				<!-- 標籤：
 				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 
-				 <a href="#/class_page/{{list.class}}">{{list.class}}</a>
+				 <a href="#/class_page/{{list.class}}">{{list.class}}</a> -->
 			</h5>
 		</div>	
 	</div>
+
 	<div class="message_post ">
 		<form ng-submit="message_post(username,message)">
 		  <div class="form-group">
