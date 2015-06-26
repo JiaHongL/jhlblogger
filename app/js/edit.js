@@ -114,7 +114,7 @@ $scope.edit_view = function (object_id) {
 // $scope.dropdown_value='class';
 $scope.all_photo_url = ''
 
-blogger.all_photo_api().then(function(res){
+blogger.all_photo_api2().then(function(res){
     var pagearray = new Array(res.data.results.length) ;
     for (i=0; i<res.data.results.length; i=i+1)
      {

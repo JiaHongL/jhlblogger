@@ -8,7 +8,8 @@ if ($rootScope.$login_stage == undefined || $rootScope.$login_stage == null||$ro
 $scope.dropdown_value='other';
 $scope.all_photo_url = ''
 
-blogger.all_photo_api().then(function(res){
+blogger.all_photo_api2().then(function(res){
+    console.log(res);
     var pagearray = new Array(res.data.results.length) ;
     for (i=0; i<res.data.results.length; i=i+1)
      {

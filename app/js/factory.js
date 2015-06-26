@@ -135,6 +135,22 @@ myApp.factory('blogger',  [
 		   			return res;
 				});
 			},
+			all_photo_api2: function(){
+				return $http({ 		
+					url:('https://api.parse.com/1/classes/photo'),
+					method: 'get',
+					headers: 
+					{ 
+					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
+					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
+					},
+					params:{
+					order:'-createdAt',	
+					},
+				}).then(function(res) {
+		   			return res;
+				});
+			},
 			photo_api: function(start_skip,limit){
 				return $http({ 		
 					url:('https://api.parse.com/1/classes/photo'),
