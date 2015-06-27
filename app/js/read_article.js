@@ -36,7 +36,7 @@ $scope.message_post = function(name,message) {
 	}
 	else{
 		blogger.add_message($stateParams.id,name,message,reply_message).then(function(res){
-			console.log(res);
+			// console.log(res);
 			$scope.username = '';
 			$scope.message = '';
 			$scope.get_message_again();

@@ -172,6 +172,16 @@ $scope.get_value = function(){
     });
 }
 
+$scope.up_photo = function(){
+    blogger.all_photo_api2().then(function(res){
+        var pagearray = new Array(res.data.results.length) ;
+        for (i=0; i<res.data.results.length; i=i+1)
+         {
+            pagearray[i] = {title:res.data.results[i].name,value:res.data.results[i].url};
+        }
+        $scope.all_photo_url = pagearray;
+    });
+}
 
 
 

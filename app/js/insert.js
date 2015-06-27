@@ -9,15 +9,12 @@ $scope.dropdown_value='other';
 $scope.all_photo_url = ''
 
 blogger.all_photo_api2().then(function(res){
-    console.log(res);
     var pagearray = new Array(res.data.results.length) ;
     for (i=0; i<res.data.results.length; i=i+1)
      {
         pagearray[i] = {title:res.data.results[i].name,value:res.data.results[i].url};
     }
     $scope.all_photo_url = pagearray;
-    // console.log($scope.all_photo_url);
-
 });
 
 $scope.tinymceOptions = {
@@ -71,12 +68,20 @@ $(".item").click(function(){
 
 
 $scope.get_value = function(){
-	// alert($scope.time);
-	// alert($scope.title);
-	// alert($scope.tinymceModel);
     blogger.add_article($scope.dropdown_value,$scope.title,$scope.tinymceModel).then(function(res){
-        // console.log(res);
         $location.path("/edit");
+    });
+}
+
+
+$scope.up_photo = function(){
+    blogger.all_photo_api2().then(function(res){
+        var pagearray = new Array(res.data.results.length) ;
+        for (i=0; i<res.data.results.length; i=i+1)
+         {
+            pagearray[i] = {title:res.data.results[i].name,value:res.data.results[i].url};
+        }
+        $scope.all_photo_url = pagearray;
     });
 }
 
