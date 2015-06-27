@@ -349,25 +349,7 @@ body {
   font-family: 'comic sans ms', sans-serif;
 }
 
-/* line 29, ../sass/partials/_page.scss */
-footer {
-  position: fixed;
-  height: 10%;
-  width: 100%;
-  bottom: 0;
-  z-index: -1;
-  background-color: #CCC;
-  border-top: 1px solid #FFF;
-  margin-top: 10px;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 2;
-  color: #666;
-  text-shadow: 1px 1px 1px #FFF;
-}
-
-/* line 59, ../sass/partials/_page.scss */
+/* line 57, ../sass/partials/_page.scss */
 #gotop {
   display: none;
   position: fixed;

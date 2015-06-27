@@ -33,7 +33,6 @@ $scope.tinymceOptions = {
         toolbar3: "table | hr removeformat | subscript superscript | charmap emoticons | print fullscreen | ltr rtl | spellchecker | visualchars visualblocks nonbreaking template pagebreak restoredraft",
     // toolbar_items_size: 'small',
         extended_valid_elements : "video[controls|preload|width|height|data-setup],source[src|type]",
-
         style_formats: [
                 {title: 'Bold text', inline: 'b'},
                 {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}},
