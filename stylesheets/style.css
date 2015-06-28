@@ -346,10 +346,10 @@ body, select, input, textarea {
 
 /* line 17, ../sass/partials/_page.scss */
 body {
-  font-family: 'comic sans ms', sans-serif;
+  font-family: DFKai-sb;
 }
 
-/* line 57, ../sass/partials/_page.scss */
+/* line 58, ../sass/partials/_page.scss */
 #gotop {
   display: none;
   position: fixed;
