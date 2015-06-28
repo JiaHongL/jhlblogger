@@ -3,13 +3,6 @@ myApp.controller('menuCtrl', ['$rootScope','$scope','$state','$stateParams','$lo
 //  console.log($state);
 
 
-$(document).ready(function(){
-    $(".fakeloader").fakeLoader({
-        timeToHide:1200,
-        bgColor:"#fff",
-        imagePath:"http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-f349d9ea-8f01-46cd-98c8-cff32eb3a898-cooltext124048774645629.png"
-    });
-});
 
 
 blogger.check_state().then(function(res){
