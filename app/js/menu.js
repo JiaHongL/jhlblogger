@@ -13,6 +13,8 @@ $scope.logout = function() {
 	$location.path("/home");
 }
 
+
+
 $(function(){
     $("#gotop").click(function(){
         jQuery("html,body").animate({

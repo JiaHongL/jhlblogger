@@ -1,3 +1,4 @@
+<div class="fakeloader"></div>
 <div class="read_article">
 	<div ng-repeat="list in article_list " class="list">
 		<div class="d_title">
@@ -48,5 +49,13 @@
 		</div>
 	</div>
 </div>
-
+<script>  
+      $(document).ready(function(){
+          $(".fakeloader").fakeLoader({
+              timeToHide:1200,
+              bgColor:"#666",
+              spinner:"spinner1"
+          });
+      });
+</script>	
 
