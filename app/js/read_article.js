@@ -1,5 +1,6 @@
 myApp.controller('read_articleCtrl', ['$rootScope','$scope','blogger','$location','$stateParams','$sce',function ($rootScope,$scope,blogger,$location,$stateParams,$sce) {
 
+
 $('#myButton').on('click', function () {
     var $btn = $(this).button('loading')
     // $btn.button('reset')
