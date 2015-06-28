@@ -353,10 +353,11 @@ body {
 #gotop {
   display: none;
   position: fixed;
-  right: 1%;
-  bottom: 45%;
-  padding: 10px 15px;
-  font-size: 20px;
+  right: 0%;
+  bottom: 49%;
+  padding: 15px 15px;
+  font-size: 25px;
+  z-index: 99999;
 }
 
 /* line 7, ../../Desktop/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
