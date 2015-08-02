@@ -1,9 +1,14 @@
 .read_article{
 	.list{
-		border: 1px dashed #dcdcdc;
+		// border: 1px dashed #dcdcdc;
 		margin-bottom:1%;
 		margin-top:1%;
 		padding: 5% 5% 2% 5%;
+	    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=5);/*for ie6,7,8*/  
+    	// background-color: #ccc;  
+	    -moz-box-shadow:4px 4px 10px 2px #969696;/*firefox*/  
+	    -webkit-box-shadow:4px 10px 5px 2px #969696;/*webkit*/  
+	    box-shadow:4px 4px 10px 2px #969696;/*opera或ie9*/ 
 
 		.d_title{
 			text-align:center;
@@ -25,7 +30,7 @@
 		}
 	}
 	.message_post{
-		margin: 0% 10% 0% 10%;
+		margin: 5% 10% 0% 10%;
 		text-align:right;
 	}
 	.message_list{
