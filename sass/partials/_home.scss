@@ -1,11 +1,19 @@
 .home{
+	margin-top:0.5%;
 	.list{
-		border-bottom: 1px dashed #dcdcdc;
-		margin-bottom:1%;
+		// border-bottom: 1px dashed #dcdcdc;
+		margin-bottom:2%;
+		padding:1%;
+	    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=5);/*for ie6,7,8*/  
+    	// background-color: #ccc;  
+	    -moz-box-shadow:4px 4px 10px 2px #969696;/*firefox*/  
+	    -webkit-box-shadow:4px 10px 5px 2px #969696;/*webkit*/  
+	    box-shadow:4px 4px 10px 2px #969696;/*opera或ie9*/  
+
 		.d_title{
 			a{
 			color: #369;
-			font-size: 18px;
+			font-size: 24px;
 			height: 32px;
 			line-height: 32px;
 			font-weight: normal;
@@ -24,6 +32,7 @@
 		    // line-height: 26px;
 			text-align:right;
 			margin-right:5%;
+			font-style: italic;
 		}
 	}
 	.bottom_page{
