@@ -608,7 +608,6 @@ body {
 .login .admin_form {
   margin-right: auto;
   margin-left: auto;
-  height: 300px;
 }
 /* line 25, ../sass/partials/_login.scss */
 .login .admin_form .admin_from_in {
