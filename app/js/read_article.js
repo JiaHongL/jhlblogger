@@ -9,7 +9,7 @@ $('#myButton').on('click', function () {
 
 
 blogger.get_read_article($stateParams.id).then(function(res){
-	console.log(res.data.results);
+	// console.log(res.data.results);
 	$scope.article_list = res.data.results;
 });
 
