@@ -44,8 +44,9 @@
 			<p>{{list.createdAt| date : 'yyyy-MM-dd hh:mm:ss'}}<p>
 			<textarea disabled='disabled'  rows="3">{{list.message}}</textarea>
 			<span class="glyphicon glyphicon-share-alt" aria-hidden="true">
-				<textarea disabled='disabled'>{{list.reply_message||' 尚未回覆'}}</textarea>
-			</span>	
+			</span>		
+			<textarea disabled='disabled' rows="3">{{list.reply_message||'尚未回覆'}}</textarea>
+		
 		</div>
 	</div>
 </div>

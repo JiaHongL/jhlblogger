@@ -1,4 +1,7 @@
 .photo{
+	background-color: #ccc !important;
+	padding:5%;
+	margin-bottom:6%;	
 	.load{
 		margin-bottom:3%;
 		.from1{
@@ -10,8 +13,11 @@
 	}
 	.img_view{
 		.img_view_1{
-			border: 1px dashed #dcdcdc;
+			border: 1px dashed black;
 			text-align:center;
+			span{
+			margin-top:3%;
+			}
 		}
 	}
 	.bottom_page{

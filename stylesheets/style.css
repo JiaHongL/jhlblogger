@@ -1,3 +1,22 @@
+/* line 16, ../sass/partials/_base.scss */
+body {
+  background-image: url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+  opacity: 0.95;
+  background-size: 100%;
+}
+/* line 20, ../sass/partials/_base.scss */
+body p {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+/* line 22, ../sass/partials/_base.scss */
+body p span {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+/* line 24, ../sass/partials/_base.scss */
+body p span em {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
 /* line 33, ../../Desktop/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 article,
 aside,
@@ -512,6 +531,7 @@ body {
   padding: 1%;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=5);
   /*for ie6,7,8*/
+  background-color: #ccc !important;
   -moz-box-shadow: 4px 4px 10px 2px #969696;
   /*firefox*/
   -webkit-box-shadow: 4px 10px 5px 2px #969696;
@@ -519,7 +539,7 @@ body {
   box-shadow: 4px 4px 10px 2px #969696;
   /*opera或ie9*/
 }
-/* line 14, ../sass/partials/_home.scss */
+/* line 15, ../sass/partials/_home.scss */
 .home .list .d_title a {
   color: #369;
   font-size: 24px;
@@ -527,24 +547,24 @@ body {
   line-height: 32px;
   font-weight: normal;
 }
-/* line 22, ../sass/partials/_home.scss */
+/* line 23, ../sass/partials/_home.scss */
 .home .list .d_time {
   color: #666;
   line-height: 26px;
 }
-/* line 30, ../sass/partials/_home.scss */
+/* line 31, ../sass/partials/_home.scss */
 .home .list .d_read {
   color: #666;
   text-align: right;
   margin-right: 5%;
   font-style: italic;
 }
-/* line 38, ../sass/partials/_home.scss */
+/* line 39, ../sass/partials/_home.scss */
 .home .bottom_page {
   text-align: center;
 }
 
-/* line 46, ../sass/partials/_home.scss */
+/* line 47, ../sass/partials/_home.scss */
 .hiddenOverFlow {
   height: 150px;
   overflow: hidden;
@@ -555,7 +575,14 @@ body {
   /*-- 設定內容強制顯示一行,直到內容結束或<br>--*/
 }
 
-/* line 3, ../sass/partials/_about.scss */
+/* line 1, ../sass/partials/_about.scss */
+.out {
+  background-color: #ccc !important;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 6, ../sass/partials/_about.scss */
 .out .blush {
   width: 200px;
   margin-right: auto;
@@ -563,19 +590,19 @@ body {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-/* line 11, ../sass/partials/_about.scss */
+/* line 12, ../sass/partials/_about.scss */
 .out .blush img {
   width: 200px;
   height: 200px;
 }
-/* line 17, ../sass/partials/_about.scss */
+/* line 18, ../sass/partials/_about.scss */
 .out .about_web {
   width: 300px;
   margin-top: 2%;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 18, ../sass/partials/_about.scss */
+/* line 19, ../sass/partials/_about.scss */
 .out .about_web h1 {
   text-align: center;
 }
@@ -592,32 +619,33 @@ body {
   /*webkit*/
   box-shadow: 4px 4px 10px 2px #969696;
   /*opera或ie9*/
+  background-color: #ccc !important;
 }
-/* line 9, ../sass/partials/_login.scss */
+/* line 10, ../sass/partials/_login.scss */
 .login .admin_png {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
-/* line 14, ../sass/partials/_login.scss */
+/* line 15, ../sass/partials/_login.scss */
 .login .admin_png img {
   height: 300px;
   weight: 300px;
 }
-/* line 19, ../sass/partials/_login.scss */
+/* line 20, ../sass/partials/_login.scss */
 .login .admin_form {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 25, ../sass/partials/_login.scss */
+/* line 26, ../sass/partials/_login.scss */
 .login .admin_form .admin_from_in {
   margin-top: 60px;
 }
-/* line 28, ../sass/partials/_login.scss */
+/* line 29, ../sass/partials/_login.scss */
 .login .admin_form .login_bt {
   text-align: center;
 }
-/* line 32, ../sass/partials/_login.scss */
+/* line 33, ../sass/partials/_login.scss */
 .login .tip {
   margin-top: 12%;
 }
@@ -639,24 +667,34 @@ body {
   margin-top: 0.5%;
 }
 
-/* line 2, ../sass/partials/_photo.scss */
+/* line 1, ../sass/partials/_photo.scss */
+.photo {
+  background-color: #ccc !important;
+  padding: 5%;
+  margin-bottom: 6%;
+}
+/* line 5, ../sass/partials/_photo.scss */
 .photo .load {
   margin-bottom: 3%;
 }
-/* line 4, ../sass/partials/_photo.scss */
+/* line 7, ../sass/partials/_photo.scss */
 .photo .load .from1 {
   display: inline-block;
 }
-/* line 7, ../sass/partials/_photo.scss */
+/* line 10, ../sass/partials/_photo.scss */
 .photo .load .btn2 {
   display: inline-block;
 }
-/* line 12, ../sass/partials/_photo.scss */
+/* line 15, ../sass/partials/_photo.scss */
 .photo .img_view .img_view_1 {
-  border: 1px dashed #dcdcdc;
+  border: 1px dashed black;
   text-align: center;
 }
-/* line 17, ../sass/partials/_photo.scss */
+/* line 18, ../sass/partials/_photo.scss */
+.photo .img_view .img_view_1 span {
+  margin-top: 3%;
+}
+/* line 23, ../sass/partials/_photo.scss */
 .photo .bottom_page {
   text-align: center;
 }
@@ -687,6 +725,12 @@ body {
   margin-top: 0.5%;
 }
 
+/* line 1, ../sass/partials/_edit_about.scss */
+.edit_about {
+  background-color: #ccc !important;
+  padding: 3%;
+}
+
 /* line 1, ../sass/partials/_class_page.scss */
 .class_page {
   margin-top: 0.5%;
@@ -703,8 +747,9 @@ body {
   /*webkit*/
   box-shadow: 4px 4px 10px 2px #969696;
   /*opera或ie9*/
+  background-color: #ccc !important;
 }
-/* line 12, ../sass/partials/_class_page.scss */
+/* line 14, ../sass/partials/_class_page.scss */
 .class_page .list .d_title a {
   color: #369;
   font-size: 24px;
@@ -712,19 +757,19 @@ body {
   line-height: 32px;
   font-weight: normal;
 }
-/* line 20, ../sass/partials/_class_page.scss */
+/* line 22, ../sass/partials/_class_page.scss */
 .class_page .list .d_time {
   color: #666;
   line-height: 26px;
 }
-/* line 28, ../sass/partials/_class_page.scss */
+/* line 30, ../sass/partials/_class_page.scss */
 .class_page .list .d_read {
   color: #666;
   text-align: right;
   margin-right: 5%;
   font-style: italic;
 }
-/* line 36, ../sass/partials/_class_page.scss */
+/* line 38, ../sass/partials/_class_page.scss */
 .class_page .bottom_page {
   text-align: center;
 }
@@ -742,49 +787,61 @@ body {
   /*webkit*/
   box-shadow: 4px 4px 10px 2px #969696;
   /*opera或ie9*/
+  background-color: #ccc !important;
 }
-/* line 13, ../sass/partials/_read_article.scss */
+/* line 14, ../sass/partials/_read_article.scss */
 .read_article .list .d_title {
   text-align: center;
   padding-bottom: 5%;
 }
-/* line 16, ../sass/partials/_read_article.scss */
+/* line 17, ../sass/partials/_read_article.scss */
 .read_article .list .d_title .h1 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
-/* line 22, ../sass/partials/_read_article.scss */
+/* line 23, ../sass/partials/_read_article.scss */
 .read_article .list .d_time {
   text-align: right;
   color: #666;
   line-height: 26px;
   padding-bottom: 0%;
 }
-/* line 32, ../sass/partials/_read_article.scss */
+/* line 33, ../sass/partials/_read_article.scss */
 .read_article .message_post {
   margin: 5% 10% 0% 10%;
   text-align: right;
 }
-/* line 37, ../sass/partials/_read_article.scss */
+/* line 38, ../sass/partials/_read_article.scss */
+.read_article .message_list {
+  background-color: #ccc !important;
+}
+/* line 42, ../sass/partials/_read_article.scss */
+.read_article .message_list h1 {
+  padding-top: 1%;
+}
+/* line 45, ../sass/partials/_read_article.scss */
 .read_article .message_list textarea {
   width: 90%;
+  padding: 1% 1% 1% 1%;
   border: 0;
   overflow-y: auto;
   /* IE */
   resize: none;
   /* Firefox, Chrome */
+  display: block;
 }
-/* line 44, ../sass/partials/_read_article.scss */
+/* line 53, ../sass/partials/_read_article.scss */
 .read_article .message_list textarea:focus {
   outline: 0;
   /* Chrome */
 }
-/* line 47, ../sass/partials/_read_article.scss */
+/* line 56, ../sass/partials/_read_article.scss */
 .read_article .message_list .message_item {
-  padding-bottom: 1%;
+  margin-left: 5%;
+  padding-bottom: 0.2%;
 }
-/* line 51, ../sass/partials/_read_article.scss */
+/* line 62, ../sass/partials/_read_article.scss */
 .read_article img {
   display: inline-block;
   width: 100% \9;
@@ -802,6 +859,7 @@ body {
 
 /* line 1, ../sass/partials/_all_article_list.scss */
 .all_article_list {
+  background-color: #ccc !important;
   padding: 2% 0% 8% 0%;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=5);
   /*for ie6,7,8*/
@@ -812,20 +870,20 @@ body {
   box-shadow: 4px 4px 10px 2px #969696;
   /*opera或ie9*/
 }
-/* line 9, ../sass/partials/_all_article_list.scss */
+/* line 10, ../sass/partials/_all_article_list.scss */
 .all_article_list .d_title {
   padding: 0% 5% 0% 5%;
 }
-/* line 11, ../sass/partials/_all_article_list.scss */
+/* line 12, ../sass/partials/_all_article_list.scss */
 .all_article_list .d_title h1 {
   font-size: 35px;
   font-weight: bold;
 }
-/* line 17, ../sass/partials/_all_article_list.scss */
+/* line 18, ../sass/partials/_all_article_list.scss */
 .all_article_list .d_time {
   padding: 0% 5% 0% 5%;
 }
-/* line 19, ../sass/partials/_all_article_list.scss */
+/* line 20, ../sass/partials/_all_article_list.scss */
 .all_article_list .d_time a {
   font-size: 18px;
   font-weight: bold;
