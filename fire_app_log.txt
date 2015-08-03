@@ -964,3 +964,27 @@
 2015-08-03 03:24:23 overwrite stylesheets/style.css 
 2015-08-03 03:24:46 overwrite stylesheets/style.css 
 2015-08-03 03:24:58 overwrite stylesheets/style.css 
+2015-08-03 09:03:04 overwrite stylesheets/style.css 
+2015-08-03 09:03:22 overwrite stylesheets/style.css 
+2015-08-03 09:03:45 overwrite stylesheets/style.css 
+2015-08-03 09:03:55 overwrite stylesheets/style.css 
+2015-08-03 09:04:07 overwrite stylesheets/style.css 
+2015-08-03 09:04:12 overwrite stylesheets/style.css 
+2015-08-03 09:04:21 overwrite stylesheets/style.css 
+2015-08-03 09:05:29 overwrite stylesheets/style.css 
+2015-08-03 09:05:40 overwrite stylesheets/style.css 
+2015-08-03 09:06:21 overwrite stylesheets/style.css 
+2015-08-03 09:06:29 overwrite stylesheets/style.css 
+2015-08-03 09:06:40 overwrite stylesheets/style.css 
+2015-08-03 09:07:38     error sass/style.scss (Line 18 of sass/partials/_base.scss: Invalid CSS after "...:img/background": expected /\//, was ".jpg;")
+2015-08-03 09:07:38 overwrite stylesheets/style.css 
+2015-08-03 09:07:38     error sass/style.scss (Line 18 of sass/partials/_base.scss: Invalid CSS after "...:img/background": expected /\//, was ".jpg;")
+2015-08-03 09:07:38 identical stylesheets/style.css 
+2015-08-03 09:07:45 overwrite stylesheets/style.css 
+2015-08-03 09:08:28 overwrite stylesheets/style.css 
+2015-08-03 09:08:34 overwrite stylesheets/style.css 
+2015-08-03 09:08:47 overwrite stylesheets/style.css 
+2015-08-03 09:09:35 overwrite stylesheets/style.css 
+2015-08-03 09:10:13 overwrite stylesheets/style.css 
+2015-08-03 09:10:38 overwrite stylesheets/style.css 
+2015-08-03 09:11:04 identical stylesheets/style.css 
