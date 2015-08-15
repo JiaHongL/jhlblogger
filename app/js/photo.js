@@ -9,7 +9,8 @@ var get_page = 1;
 var all_limit = 0; 
 var get_limit =0; 
 var get_load_page = 1; 
-var get_max_page = 0; 
+var get_max_page = 0;
+var delete_objectid = ''; 
 
 $('#myButton').on('click', function () {
     var $btn = $(this).button('loading')
@@ -81,14 +82,22 @@ $scope.uploadFile2 = function() {
 }
 
 //刪除照片
-$scope.deletephoto = function(id,objectid) {
-  blogger.delete_photo_api(objectid).then(function(res){
-    console.log(res);
+
+$scope.delete_re_tip = function(objectid){
+  delete_objectid = objectid;
+  $('#myModal').modal('toggle')
+};
+
+$scope.deletephoto = function() {
+  blogger.delete_photo_api(delete_objectid).then(function(res){
     $scope.get_now_photo_count();
     $scope.get_now_photo_page();
     $scope.photopage_det();
   }); 
 };
+
+
+
 
 //顯示圖片
 $scope.photopage = function(page) {

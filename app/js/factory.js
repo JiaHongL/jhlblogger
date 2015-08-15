@@ -409,7 +409,7 @@ myApp.factory('blogger',  [
 		   			return res;
 				});
 			},
-			add_message: function(article_id,name,message,reply_type){
+			add_message: function(article_id,name,message,reply_type,title){
 				return $http({ 		
 					url:('https://api.parse.com/1/classes/message'),
 					method: 'post',
@@ -423,7 +423,8 @@ myApp.factory('blogger',  [
 					 article_id:article_id,
 					 name:name,
 					 message:message,
-					 reply_type:reply_type, 
+					 reply_type:reply_type,
+					 title:title, 
 					 }
 				}).then(function(res) {	
 		            return res;
@@ -444,6 +445,88 @@ myApp.factory('blogger',  [
 					},
 				}).then(function(res) {
 		   			return res;
+				});
+			},
+			get_all_message: function(is_re,start_skip,limit){
+				return $http({ 		
+					url:('https://api.parse.com/1/classes/message'),
+					method: 'get',
+					headers: 
+					{ 
+					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
+					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
+					},
+					params:{
+					where:{"reply_type":is_re},
+					limit:limit,
+					skip:start_skip,
+					order:'createdAt',	
+					},
+				}).then(function(res) {
+		   			return res;
+				});
+			},
+			get_re_update: function(objectId,message,isre){
+				return $http({ 		
+					url:('https://api.parse.com/1/classes/message/'+objectId),
+					method: 'put',
+					headers: 
+					{ 
+					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
+					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
+					},
+					data:
+					 {
+					 reply_message:message,
+					 reply_type:isre,
+					 },
+				}).then(function(res) {
+		   			return res;
+				});
+			},
+			check_re_row_api: function(reply_type){
+				return $http({ 		
+					url:('https://api.parse.com/1/classes/message'),
+					method: 'get',
+					headers: 
+					{ 
+					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
+					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
+					},
+					params:{
+					where:{"reply_type":reply_type},	
+					},
+				}).then(function(res) {
+					var page = 0;
+					if ((res.data.results.length%10)==0){
+						if(res.data.results.length/10==0){
+							page = res.data.results.length/10 + 1
+						}
+						else{
+							page = res.data.results.length/10
+						}
+						}
+					else{
+						page = Math.ceil(res.data.results.length/10);
+					}	
+		            return page;
+		   				// return res;
+				});
+			},
+			get_all_re_count: function(reply_type){
+				return $http({ 		
+					url:('https://api.parse.com/1/classes/message'),
+					method: 'get',
+					headers: 
+					{ 
+					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
+					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
+					},
+					params:{
+					where:{"reply_type":reply_type},	
+					},
+				}).then(function(res) {
+					return res.data.results.length;
 				});
 			},
 			get_all_article: function(){

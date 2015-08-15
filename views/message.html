@@ -1,1 +1,106 @@
-message
+<div class='message_page'>
+	<div ng-if="message_view_status=='message_0'">
+		<div style="margin-bottom:1%;">
+			<div class="btn-group btn-group-lg" role="group" aria-label="...">
+			  <div class="btn-group" role="group">
+			    <button type="button" class="btn btn-info" ng-click="get_message_0(1)">未回覆 ({{re_0_count}})</button>
+			  </div>
+			  <div class="btn-group" role="group">
+			    <button type="button" class="btn btn-warning" ng-click="get_message_1(1)">已回覆 ({{re_1_count}})</button>
+			  </div>
+			</div>
+		</div>	
+		<table class="table table-bordered" >
+		      <thead >
+		        <tr class="info">
+		          <th>時間</th>
+		          <th>文章</th>
+		          <th>匿稱</th>
+		          <th>留言訊息</th>
+		          <th>Reply</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		        <tr ng-repeat='list in new_message_list' class="success">
+		          <th scope="row">{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}</th>
+		          <td>{{list.title}}</td>
+		          <td>{{list.name}}</td>
+		          <td>{{list.message|limitTo:10}}...</td>
+		          <td><span class="glyphicon glyphicon-pencil" aria-hidden="true" ng-click="get_re(list.name,list.message,list.objectId,list.title)"></span>
+		          </td>	
+		        </tr>
+		      </tbody>
+		</table>
+		<div class="row bottom_page">
+			  <div class="bottom_page_center">
+			  	<ul class="pagination" ng-repeat="list in page">
+				  <li><a href="#" ng-click="get_message_0(list.page)">{{list.page}}</a></li>
+				</ul>
+			  </div>
+		</div>	 
+	</div>	
+	<div ng-if="message_view_status=='message_1'">
+		<div style="margin-bottom:1%;">
+			<div class="btn-group btn-group-lg" role="group" aria-label="...">
+			  <div class="btn-group" role="group">
+			    <button type="button" class="btn btn-info" ng-click="get_message_0(1)">未回覆 ({{re_0_count}})</button>
+			  </div>
+			  <div class="btn-group" role="group">
+			    <button type="button" class="btn btn-warning" ng-click="get_message_1(1)">已回覆 ({{re_1_count}})</button>
+			  </div>
+			</div>
+		</div>		
+		<table class="table table-bordered" >
+		      <thead >
+		        <tr class="info">
+		          <th>時間</th>
+		          <th>文章</th>
+		          <th>匿稱</th>
+		          <th>留言訊息</th>
+		          <th>回覆內容</th>
+		          <th>modify</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		        <tr ng-repeat='list in new_message_list' class="success">
+		          <th scope="row">{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}</th>
+		           <td>{{list.title}}</td>
+		          <td>{{list.name}}</td>
+		          <td>{{list.message|limitTo:10}}...</td>
+		          <td>{{list.reply_message|limitTo:10}}...</td>
+		          <td><span class="glyphicon glyphicon-pencil" aria-hidden="true" ng-click="get_re2(list.name,list.message,list.objectId,list.reply_message,list.title)"></span>
+		          </td>	
+		        </tr>
+		      </tbody>
+		</table>
+		<div class="row bottom_page">
+		    <div class="bottom_page_center">
+			  	<ul class="pagination " ng-repeat="list in page">
+				  <li><a href="#" ng-click="get_message_1(list.page)">{{list.page}}</a></li>
+				</ul>
+		    </div>
+		</div>	 
+	</div>
+	<div ng-if="message_view_status=='re_status'" class="re_div">
+		<div class="div_title">
+			<h1>{{re_title}}</h1>
+		</div>	
+		<div class="re_text">
+			<h2>re : 
+				<span class="glyphicon glyphicon-user" aria-hidden="true">{{re_name||'joe'}}</span>
+			</h2>
+			<textarea disabled='disabled'  rows="10">{{re_message||'1231234'}}</textarea>
+		</div>
+		<div class="message_post">
+			<form>
+			  <div class="form-group">
+			    <textarea class="form-control" rows="10" placeholder="Message..." ng-model="$parent.message2"></textarea>
+			  </div>
+			  <div class="g_btn">
+		  		  <button type="submit" id="myButton" class="btn btn-primary  active" data-loading-text="Loading..." autocomplete="off" ng-click="push_re()">回覆 <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+				  <button type="submit" id="myButton" class="btn btn-primary  active" data-loading-text="Loading..." autocomplete="off" ng-click="cancel()">取消</button>
+			  </div>
+			</form>		
+		</div>	
+	</div>
+</div>

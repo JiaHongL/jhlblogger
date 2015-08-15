@@ -13,7 +13,7 @@
 	</div>	
 	<div class="row img_view">
 		  <div class="col-md-4 img_view_1" ng-repeat="list in page_photo">
-				<span class="glyphicon glyphicon-remove-circle" aria-hidden="true" ng-click="deletephoto(list.old_name,list.objectId)"></span>
+				<span class="glyphicon glyphicon-remove-circle" aria-hidden="true" ng-click="delete_re_tip(list.objectId)"></span>
 		  		<div class="blush">
 		  			<a href= "{{list.url}}" target=_blank >
 					<img src="{{list.url}}" alt="載入中～" class="img-rounded" width="200" height="200">
@@ -24,17 +24,29 @@
 		  </div>
 	</div>
 	<div class="row bottom_page">
-		  <div class="col-md-2">
-		  </div>
-		  <div class="col-md-6">
+		  <div class="bottom_page_center">
 		  	<ul class="pagination pagination" ng-repeat="list in page">
 			  <li><a href="#" ng-click="photopage(list.page)">{{list.page}}</a></li>
 			</ul>
 		  </div>
-		  <div class="col-md-2">
-		  </div>
 	</div>	 
-</div> 	
+</div> 
+
+<div id="myModal" class="modal fade bs-example-modal-sm tip" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="gridSystemModalLabel">確定刪除照片？</h4>
+        </div>
+
+        <div class="modal-footer">
+           <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="deletephoto()">delete</button>	
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>	
 
 
   

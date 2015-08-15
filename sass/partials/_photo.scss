@@ -21,6 +21,12 @@
 		}
 	}
 	.bottom_page{
-		text-align:center;
+		margin-top:5%;
+		.bottom_page_center{
+			width: 80%;
+			text-align:center;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }

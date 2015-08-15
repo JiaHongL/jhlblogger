@@ -3,18 +3,24 @@ body {
   background-image: url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
   opacity: 0.95;
   background-size: 100%;
+  padding-top: 70px;
 }
-/* line 21, ../sass/partials/_base.scss */
+/* line 22, ../sass/partials/_base.scss */
 body p {
   background-color: rgba(255, 255, 255, 0) !important;
 }
-/* line 23, ../sass/partials/_base.scss */
+/* line 24, ../sass/partials/_base.scss */
 body p span {
   background-color: rgba(255, 255, 255, 0) !important;
 }
-/* line 25, ../sass/partials/_base.scss */
+/* line 26, ../sass/partials/_base.scss */
 body p span em {
   background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* line 33, ../sass/partials/_base.scss */
+#myModal {
+  margin-top: 20%;
 }
 
 /* line 33, ../../Desktop/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
@@ -559,12 +565,15 @@ body {
   margin-right: 5%;
   font-style: italic;
 }
-/* line 39, ../sass/partials/_home.scss */
-.home .bottom_page {
+/* line 40, ../sass/partials/_home.scss */
+.home .bottom_page .bottom_page_center {
+  width: 80%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 47, ../sass/partials/_home.scss */
+/* line 52, ../sass/partials/_home.scss */
 .hiddenOverFlow {
   height: 150px;
   overflow: hidden;
@@ -665,6 +674,7 @@ body {
 /* line 14, ../sass/partials/_insert.scss */
 .insert .submit {
   margin-top: 0.5%;
+  float: right;
 }
 
 /* line 1, ../sass/partials/_photo.scss */
@@ -696,7 +706,14 @@ body {
 }
 /* line 23, ../sass/partials/_photo.scss */
 .photo .bottom_page {
+  margin-top: 5%;
+}
+/* line 25, ../sass/partials/_photo.scss */
+.photo .bottom_page .bottom_page_center {
+  width: 80%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 2, ../sass/partials/_edit.scss */
@@ -723,6 +740,7 @@ body {
 /* line 25, ../sass/partials/_edit.scss */
 .edit2 .submit {
   margin-top: 0.5%;
+  float: right;
 }
 
 /* line 1, ../sass/partials/_edit_about.scss */
@@ -888,4 +906,60 @@ body {
   font-size: 18px;
   font-weight: bold;
   color: #777;
+}
+
+/* line 2, ../sass/partials/_message.scss */
+.message_page .table th, .message_page .table td {
+  text-align: center;
+}
+/* line 6, ../sass/partials/_message.scss */
+.message_page .bottom_page .bottom_page_center {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 14, ../sass/partials/_message.scss */
+.message_page .re_div .div_title {
+  text-align: center;
+  font-size: 0.5cm;
+}
+/* line 19, ../sass/partials/_message.scss */
+.message_page .re_div .re_text {
+  background-color: #ccc !important;
+  margin-bottom: 3%;
+}
+/* line 22, ../sass/partials/_message.scss */
+.message_page .re_div .re_text h2 {
+  padding-top: 1%;
+  padding-left: 1%;
+  font-style: italic;
+}
+/* line 26, ../sass/partials/_message.scss */
+.message_page .re_div .re_text h2 span {
+  font-style: italic;
+}
+/* line 30, ../sass/partials/_message.scss */
+.message_page .re_div .re_text textarea {
+  width: 100%;
+  border: 0;
+  overflow-y: auto;
+  /* IE */
+  resize: none;
+  /* Firefox, Chrome */
+  display: block;
+}
+/* line 38, ../sass/partials/_message.scss */
+.message_page .re_div .re_text textarea:focus {
+  outline: 0;
+  /* Chrome */
+}
+/* line 41, ../sass/partials/_message.scss */
+.message_page .re_div .re_text .message_item {
+  margin-left: 5%;
+  padding-bottom: 0.2%;
+}
+/* line 47, ../sass/partials/_message.scss */
+.message_page .re_div .message_post .g_btn {
+  float: right;
 }

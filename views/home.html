@@ -7,7 +7,7 @@
 		<div class="d_time">
 			<h5 class="d21">作者：JHL 時間：{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}  標籤：
 				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 
-				 <a href="#/class_page/{{list.class}}">{{list.class}}</a>
+				 <a href="#/class_page/{{list.class}}">&nbsp;{{list.class}}</a>
 			</h5>
 		</div>	
 		<div class="d_article">
@@ -19,14 +19,10 @@
 		</div>	
 	</div>
 	<div class="row bottom_page">
-      <div class="col-md-2">
-      </div>
-      <div class="col-md-6">
+      <div class="bottom_page_center">
         <ul class="pagination pagination" ng-repeat="list in page">
         <li><a ng-click="photopage(list.page)">{{list.page}}</a></li>
       </ul>
-      </div>
-      <div class="col-md-2">
       </div>
   </div>
 </div>

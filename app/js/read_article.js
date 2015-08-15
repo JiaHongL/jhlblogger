@@ -1,6 +1,5 @@
 myApp.controller('read_articleCtrl', ['$rootScope','$scope','blogger','$location','$stateParams','$sce',function ($rootScope,$scope,blogger,$location,$stateParams,$sce) {
-
-
+$scope.article_title = '';
 $('#myButton').on('click', function () {
     var $btn = $(this).button('loading')
     // $btn.button('reset')
@@ -11,6 +10,8 @@ $('#myButton').on('click', function () {
 blogger.get_read_article($stateParams.id).then(function(res){
 	// console.log(res.data.results);
 	$scope.article_list = res.data.results;
+	$scope.article_title = res.data.results[0].title;
+
 });
 
 blogger.get_message($stateParams.id).then(function(res){
@@ -36,7 +37,7 @@ $scope.message_post = function(name,message) {
 		$('#myButton').button('reset');
 	}
 	else{
-		blogger.add_message($stateParams.id,name,message,reply_message).then(function(res){
+		blogger.add_message($stateParams.id,name,message,reply_message,$scope.article_title).then(function(res){
 			// console.log(res);
 			$scope.username = '';
 			$scope.message = '';
