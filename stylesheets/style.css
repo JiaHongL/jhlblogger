@@ -23,6 +23,26 @@ body p span em {
   margin-top: 20%;
 }
 
+/* line 37, ../sass/partials/_base.scss */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 45, ../sass/partials/_base.scss */
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* line 33, ../../Desktop/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 article,
 aside,
