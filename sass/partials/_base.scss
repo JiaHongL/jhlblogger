@@ -18,6 +18,36 @@ body {
   background-repeat: no-repeat;
   background-position:left top;
   background-image:url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+     @media screen and (min-width: 1200px) {
+    // 如果使用者之視窗寬度 >= 1200px，將會再載入這裡的 CSS。
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-image:url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 979px) {
+        // 如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS。
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-position:left top;    
+     background-image:url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+      
+    }
+
+    @media screen and (max-width: 767px) {
+        // 如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS。  
+        background-image:url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+        background-repeat: repeat;
+    }
+
+    @media screen and (max-device-width: 480px) {
+        // 如果使用者之裝置寬度 <= 480px，將會再載入這裡的 CSS。 
+        background-image:url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+        background-repeat:repeat;
+    }
+
   // background-image:url(https://dl.dropboxusercontent.com/u/114780077/bg/balance-865079.jpg);
   opacity: 0.95;
   background-size:  100%;

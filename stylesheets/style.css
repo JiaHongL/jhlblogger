@@ -8,25 +8,57 @@ body {
   background-size: 100%;
   padding-top: 70px;
 }
-/* line 25, ../sass/partials/_base.scss */
+@media screen and (min-width: 1200px) {
+  /* line 16, ../sass/partials/_base.scss */
+  body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  /* line 16, ../sass/partials/_base.scss */
+  body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 16, ../sass/partials/_base.scss */
+  body {
+    background-image: url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+    background-repeat: repeat;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  /* line 16, ../sass/partials/_base.scss */
+  body {
+    background-image: url(http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3/tfss-129c5e49-c6ba-447b-accd-d75e68294ec0-balance-865079_1280.jpg);
+    background-repeat: repeat;
+  }
+}
+/* line 55, ../sass/partials/_base.scss */
 body p {
   background-color: rgba(255, 255, 255, 0) !important;
 }
-/* line 27, ../sass/partials/_base.scss */
+/* line 57, ../sass/partials/_base.scss */
 body p span {
   background-color: rgba(255, 255, 255, 0) !important;
 }
-/* line 29, ../sass/partials/_base.scss */
+/* line 59, ../sass/partials/_base.scss */
 body p span em {
   background-color: rgba(255, 255, 255, 0) !important;
 }
 
-/* line 36, ../sass/partials/_base.scss */
+/* line 66, ../sass/partials/_base.scss */
 #myModal {
   margin-top: 20%;
 }
 
-/* line 40, ../sass/partials/_base.scss */
+/* line 70, ../sass/partials/_base.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -35,7 +67,7 @@ body p span em {
   overflow: hidden;
 }
 
-/* line 48, ../sass/partials/_base.scss */
+/* line 78, ../sass/partials/_base.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
