@@ -775,24 +775,27 @@ body {
 .edit1 .table th, .edit1 .table td {
   text-align: center;
 }
-/* line 5, ../sass/partials/_edit.scss */
-.edit1 .bottom_page {
+/* line 6, ../sass/partials/_edit.scss */
+.edit1 .bottom_page .bottom_page_center {
+  width: 80%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 13, ../sass/partials/_edit.scss */
+/* line 18, ../sass/partials/_edit.scss */
 .edit2 .title {
   margin-bottom: 1%;
 }
-/* line 16, ../sass/partials/_edit.scss */
+/* line 21, ../sass/partials/_edit.scss */
 .edit2 label {
   margin-left: 20px;
 }
-/* line 24, ../sass/partials/_edit.scss */
+/* line 29, ../sass/partials/_edit.scss */
 .edit2 #datepicker > span:hover {
   cursor: pointer;
 }
-/* line 25, ../sass/partials/_edit.scss */
+/* line 30, ../sass/partials/_edit.scss */
 .edit2 .submit {
   margin-top: 0.5%;
   float: right;
@@ -802,6 +805,13 @@ body {
 .edit_about {
   background-color: #ccc !important;
   padding: 3%;
+}
+/* line 4, ../sass/partials/_edit_about.scss */
+.edit_about .div_right {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 1, ../sass/partials/_class_page.scss */
