@@ -88,19 +88,23 @@ myApp.factory('blogger',  [
 					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
 					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
 					},
+					params:{
+					count:'1',
+					limit:'0'	
+					},
 				}).then(function(res) {
 					// console.log(res);
 					var page = 0;
-					if ((res.data.results.length%9)==0){
-						if(res.data.results.length/9==0){
-							page = res.data.results.length/9 + 1
+					if ((res.data.count%9)==0){
+						if(res.data.count/9==0){
+							page = res.data.count/9 + 1
 						}
 						else{
-							page = res.data.results.length/9
+							page = res.data.count/9
 						}
 						}
 					else{
-						page = Math.ceil(res.data.results.length/9);
+						page = Math.ceil(res.data.count/9);
 					}	
 		            return page;
 		   				// return res;
@@ -115,8 +119,13 @@ myApp.factory('blogger',  [
 					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
 					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
 					},
+					params:{
+					count:'1',
+					limit:'0'	
+					},
 				}).then(function(res) {
-					return res.data.results.length;
+					// console.log(res.data.count);
+					return res.data.count;
 				});
 			},
 			all_photo_api: function(){
@@ -229,19 +238,23 @@ myApp.factory('blogger',  [
 					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
 					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
 					},
+					params:{
+					count:'1',
+					limit:'0'	
+					},
 				}).then(function(res) {
 					// console.log(res);
 					var page = 0;
-					if ((res.data.results.length%15)==0){
-						if(res.data.results.length/15==0){
-							page = res.data.results.length/15 + 1
+					if ((res.data.count%15)==0){
+						if(res.data.count/15==0){
+							page = res.data.count/15 + 1
 						}
 						else{
-							page = res.data.results.length/15
+							page = res.data.count/15
 						}
 						}
 					else{
-						page = Math.ceil(res.data.results.length/15);
+						page = Math.ceil(res.data.count/15);
 					}	
 		            return page;
 		   				// return res;
@@ -357,21 +370,23 @@ myApp.factory('blogger',  [
 					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
 					},params:{
 					where:{"class":class2},
-					order:'createdAt',	
+					order:'createdAt',
+					count:'1',
+					limit:'0'		
 					},
 				}).then(function(res) {
 					// console.log(res);
 					var page = 0;
-					if ((res.data.results.length%15)==0){
-						if(res.data.results.length/15==0){
-							page = res.data.results.length/15 + 1
+					if ((res.data.count%15)==0){
+						if(res.data.count/15==0){
+							page = res.data.count/15 + 1
 						}
 						else{
-							page = res.data.results.length/15
+							page = res.data.count/15
 						}
 						}
 					else{
-						page = Math.ceil(res.data.results.length/15);
+						page = Math.ceil(res.data.count/15);
 					}	
 		            return page;
 		   				// return res;
@@ -387,10 +402,12 @@ myApp.factory('blogger',  [
 					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
 					},params:{
 					where:{"class":class2},
-					order:'createdAt',	
+					order:'createdAt',
+					count:'1',
+					limit:'0'	
 					},
 				}).then(function(res) {
-					return res.data.results.length;
+					return res.data.count;
 				});
 			},
 			get_read_article: function(objectId){
@@ -494,20 +511,22 @@ myApp.factory('blogger',  [
 					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
 					},
 					params:{
-					where:{"reply_type":reply_type},	
+					where:{"reply_type":reply_type},
+					count:'1',
+					limit:'0'	
 					},
 				}).then(function(res) {
 					var page = 0;
-					if ((res.data.results.length%10)==0){
-						if(res.data.results.length/10==0){
-							page = res.data.results.length/10 + 1
+					if ((res.data.count%10)==0){
+						if(res.data.count/10==0){
+							page = res.data.count/10 + 1
 						}
 						else{
-							page = res.data.results.length/10
+							page = res.data.count/10
 						}
 						}
 					else{
-						page = Math.ceil(res.data.results.length/10);
+						page = Math.ceil(res.data.count/10);
 					}	
 		            return page;
 		   				// return res;
@@ -523,10 +542,12 @@ myApp.factory('blogger',  [
 					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
 					},
 					params:{
-					where:{"reply_type":reply_type},	
+					where:{"reply_type":reply_type},
+					count:'1',
+					limit:'0'	
 					},
 				}).then(function(res) {
-					return res.data.results.length;
+					return res.data.count;
 				});
 			},
 			get_all_article: function(){
@@ -551,6 +572,8 @@ myApp.factory('blogger',  [
 	}
 
 ]);
+
+//count 100 re
 
 // http://files.parsetfss.com/94c0de81-23b3-4a8c-842f-d063b93005c3
 
