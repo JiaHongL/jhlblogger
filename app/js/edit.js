@@ -14,6 +14,7 @@ var delete_objectid = '';
 var edit_objectid = ''
 
 $scope.edit_view_status = 'edit1';
+$scope.de_title = ''
 
 
 
@@ -60,8 +61,9 @@ $scope.photopage(1);
 
 //刪除文章
 
-$scope.delete_edit_tip = function(objectid){
+$scope.delete_edit_tip = function(objectid,title){
 	delete_objectid = objectid;
+  $scope.de_title = title;
 	$('#myModal').modal('toggle')
 };
 

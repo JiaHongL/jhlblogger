@@ -13,7 +13,7 @@
 	</div>	
 	<div class="row img_view">
 		  <div class="col-md-4 img_view_1" ng-repeat="list in page_photo">
-				<span class="glyphicon glyphicon-remove-circle" aria-hidden="true" ng-click="delete_re_tip(list.objectId)"></span>
+				<span class="glyphicon glyphicon-remove-circle" aria-hidden="true" ng-click="delete_re_tip(list.objectId,list.name)"></span>
 		  		<div class="blush">
 		  			<a href= "{{list.url}}" target=_blank >
 					<img src="{{list.url}}" alt="載入中～" class="img-rounded" width="200" height="200">
@@ -37,9 +37,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="gridSystemModalLabel">確定刪除照片？</h4>
+          <h4 class="modal-title" id="gridSystemModalLabel">刪除照片</h4>
         </div>
-
+        <div class="modal-body" >
+          <div class="tip_c_1"> 
+             <div class="tip_c_2">
+             <p >確定刪除『 {{de_title}} 』照片嗎？</p>
+             </div>
+          </div>
+        </div>
         <div class="modal-footer">
            <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="deletephoto()">delete</button>	
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

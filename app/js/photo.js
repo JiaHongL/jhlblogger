@@ -10,7 +10,8 @@ var all_limit = 0;
 var get_limit =0; 
 var get_load_page = 1; 
 var get_max_page = 0;
-var delete_objectid = ''; 
+var delete_objectid = '';
+$scope.de_title = ''; 
 
 $('#myButton').on('click', function () {
     var $btn = $(this).button('loading')
@@ -83,8 +84,9 @@ $scope.uploadFile2 = function() {
 
 //刪除照片
 
-$scope.delete_re_tip = function(objectid){
+$scope.delete_re_tip = function(objectid,title){
   delete_objectid = objectid;
+  $scope.de_title = title;
   $('#myModal').modal('toggle')
 };
 

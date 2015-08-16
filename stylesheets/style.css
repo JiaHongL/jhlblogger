@@ -801,6 +801,14 @@ body {
   float: right;
 }
 
+/* line 41, ../sass/partials/_edit.scss */
+.tip_c_1 .tip_c_2 {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* line 1, ../sass/partials/_edit_about.scss */
 .edit_about {
   background-color: #ccc !important;
