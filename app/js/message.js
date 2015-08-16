@@ -19,6 +19,7 @@ var old_page = 1;
 //0 未回覆
 $scope.get_message_0 = function(page) {
 	// $scope.page = '';
+	$scope.get_0_1_count();
 	$scope.get_re_count('0');
 	$scope.get_re_page_count('0');
 	get_load_page = page;
@@ -40,6 +41,7 @@ $scope.get_message_0 = function(page) {
 //1 已回覆
 $scope.get_message_1 = function(page) {
 	// $scope.page = '';
+	$scope.get_0_1_count();
 	$scope.get_re_count('1');
 	$scope.get_re_page_count('1');
 	get_load_page = page;
@@ -124,6 +126,7 @@ $scope.get_re_page_count = function(reply_type) {
 $scope.get_re_count = function(reply_type) {
   blogger.get_all_re_count(reply_type).then(function(res){
     all_limit = res;
+    // console.log(res);
   });
 };
 
