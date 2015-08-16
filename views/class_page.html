@@ -7,7 +7,7 @@
 		<div class="d_time">
 			<h5 class="d21">作者：JHL 時間：{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}  標籤：
 				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 
-				 <a>{{list.class}}</a>
+				 <a>&nbsp;{{list.class}}</a>
 			</h5>
 		</div>	
 		<div class="d_article">
@@ -33,7 +33,7 @@
 <script>  
       $(document).ready(function(){
           $(".fakeloader").fakeLoader({
-              timeToHide:1200,
+              timeToHide:600,
               bgColor:"#666",
               spinner:"spinner1"
           });

@@ -53,12 +53,12 @@ body p span em {
   background-color: rgba(255, 255, 255, 0) !important;
 }
 
-/* line 66, ../sass/partials/_base.scss */
+/* line 68, ../sass/partials/_base.scss */
 #myModal {
   margin-top: 20%;
 }
 
-/* line 70, ../sass/partials/_base.scss */
+/* line 72, ../sass/partials/_base.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -67,7 +67,7 @@ body p span em {
   overflow: hidden;
 }
 
-/* line 78, ../sass/partials/_base.scss */
+/* line 80, ../sass/partials/_base.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -652,12 +652,12 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 /* line 12, ../sass/partials/_about.scss */
 .out .blush img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
 }
 /* line 18, ../sass/partials/_about.scss */
 .out .about_web {

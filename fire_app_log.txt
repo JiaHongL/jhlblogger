@@ -1126,3 +1126,27 @@
 2015-08-16 01:29:08 overwrite stylesheets/style.css 
 2015-08-16 01:41:15 overwrite stylesheets/style.css 
 2015-08-16 01:42:23 overwrite stylesheets/style.css 
+2015-08-16 08:12:09     error sass/style.scss (Line 6 of sass/partials/_about.scss: Invalid CSS after "	margin-bottom:5%": expected ";", was ":")
+2015-08-16 08:12:09 overwrite stylesheets/style.css 
+2015-08-16 08:12:10     error sass/style.scss (Line 6 of sass/partials/_about.scss: Invalid CSS after "	margin-bottom:5%": expected ";", was ":")
+2015-08-16 08:12:10 identical stylesheets/style.css 
+2015-08-16 08:12:12 overwrite stylesheets/style.css 
+2015-08-16 08:12:16 identical stylesheets/style.css 
+2015-08-16 08:12:45 overwrite stylesheets/style.css 
+2015-08-16 08:12:51 overwrite stylesheets/style.css 
+2015-08-16 08:12:55 overwrite stylesheets/style.css 
+2015-08-16 08:13:14 overwrite stylesheets/style.css 
+2015-08-16 08:13:37 overwrite stylesheets/style.css 
+2015-08-16 08:13:44 identical stylesheets/style.css 
+2015-08-16 08:14:34 overwrite stylesheets/style.css 
+2015-08-16 08:25:39 overwrite stylesheets/style.css 
+2015-08-16 08:31:55 overwrite stylesheets/style.css 
+2015-08-16 08:32:29 overwrite stylesheets/style.css 
+2015-08-16 08:32:51 overwrite stylesheets/style.css 
+2015-08-16 08:33:45 overwrite stylesheets/style.css 
+2015-08-16 08:34:33 overwrite stylesheets/style.css 
+2015-08-16 08:34:38 overwrite stylesheets/style.css 
+2015-08-16 08:35:00 overwrite stylesheets/style.css 
+2015-08-16 08:47:02 overwrite stylesheets/style.css 
+2015-08-16 08:52:38 overwrite stylesheets/style.css 
+2015-08-16 08:54:07 overwrite stylesheets/style.css 
