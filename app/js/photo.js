@@ -21,7 +21,7 @@ $('#myButton').on('click', function () {
 //取得相片數量
 $scope.get_now_photo_count = function() {
   blogger.get_all_photo_count().then(function(res){
-    console.log(res);
+    // console.log(res);
     all_limit = res;
   });
   
@@ -31,7 +31,7 @@ $scope.get_now_photo_count();
 //取得頁碼
 $scope.get_now_photo_page = function() {
   blogger.check_photo_row_api().then(function(res){
-  console.log(res);
+  // console.log(res);
   get_max_page = res;
   var pagearray = new Array(res) ;
   for (i=0; i<res; i=i+1)
@@ -112,8 +112,8 @@ $scope.photopage = function(page) {
   if(get_page==0||get_limit>9){
     get_limit = 9;
   }
-  console.log(get_page);
-  console.log(get_limit);
+  // console.log(get_page);
+  // console.log(get_limit);
   blogger.photo_api(get_page,get_limit).then(function(res){
     console.log(res.data.results);
     $scope.page_photo = res.data.results;
@@ -124,7 +124,7 @@ $scope.photopage(1);
 //上傳照片後
 $scope.photopage_load= function() {
   blogger.check_photo_row_api().then(function(res){
-    console.log(res);
+    // console.log(res);
     get_max_page = res;
     $scope.photopage(get_max_page);
   });
@@ -133,7 +133,7 @@ $scope.photopage_load= function() {
 //刪除照片後
 $scope.photopage_det= function() {
   blogger.check_photo_row_api().then(function(res){
-    console.log(res);
+    // console.log(res);
     get_max_page = res;
     if(get_load_page==1){
       $scope.photopage(get_load_page);
