@@ -1,5 +1,5 @@
 <div class="fakeloader"></div>
-<div class="class_page">
+<div class="class_page ng-cloak">
 	<div ng-repeat="list in article_list " class="list">
 		<div class="d_title">
 			<a href="#/read_article/{{list.objectId}}">{{list.title}}</a>
@@ -19,16 +19,12 @@
 		</div>	
 	</div>
 	<div class="row bottom_page">
-      <div class="col-md-2">
-      </div>
-      <div class="col-md-6">
+      <div class="bottom_page_center">
         <ul class="pagination pagination" ng-repeat="list in page">
-        <li><a href="#" ng-click="classpage(list.page)">{{list.page}}</a></li>
+        <li><a ng-click="photopage(list.page)">{{list.page}}</a></li>
       </ul>
       </div>
-      <div class="col-md-2">
-      </div>
-  </div>
+    </div>
 </div>
 <script>  
       $(document).ready(function(){
