@@ -645,8 +645,16 @@ body {
   width: 85%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 1%;
+  margin-top: -1%;
 }
-/* line 6, ../sass/partials/_about.scss */
+@media screen and (min-width: 1500px) {
+  /* line 1, ../sass/partials/_about.scss */
+  .out {
+    margin-top: 2%;
+  }
+}
+/* line 11, ../sass/partials/_about.scss */
 .out .blush {
   width: 200px;
   margin-right: auto;
@@ -654,21 +662,33 @@ body {
   margin-top: 2%;
   margin-bottom: 1%;
 }
-/* line 12, ../sass/partials/_about.scss */
+@media screen and (min-width: 1500px) {
+  /* line 11, ../sass/partials/_about.scss */
+  .out .blush {
+    margin-top: 4%;
+  }
+}
+/* line 20, ../sass/partials/_about.scss */
 .out .blush img {
   width: 180px;
   height: 180px;
 }
-/* line 18, ../sass/partials/_about.scss */
+/* line 24, ../sass/partials/_about.scss */
+.out .blush h1 {
+  text-align: center;
+}
+/* line 29, ../sass/partials/_about.scss */
 .out .about_web {
   width: 300px;
-  margin-top: 2%;
+  margin-top: -2%;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 19, ../sass/partials/_about.scss */
-.out .about_web h1 {
-  text-align: center;
+@media screen and (min-width: 1500px) {
+  /* line 29, ../sass/partials/_about.scss */
+  .out .about_web {
+    margin-bottom: 5%;
+  }
 }
 
 /* line 1, ../sass/partials/_login.scss */
