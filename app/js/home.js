@@ -33,6 +33,7 @@ $scope.get_now_edit_count();
 //顯示文章列
 $scope.photopage = function(page) {
   // console.log(page);
+  // 
   get_load_page = page;
   get_page = (page-1)*15;
   get_limit = all_limit - get_page;

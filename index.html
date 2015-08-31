@@ -30,11 +30,12 @@
     <script src='javascripts/angular-ui-router.js'></script>
     <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/fakeloader/fakeLoader.js"></script>
+    <script src="bower_components/angular-bindonce/bindonce.min.js"></script>
     
   </head>
-  <body ng-controller = 'menuCtrl' class="ng-cloak">
+  <body ng-controller = 'menuCtrl' class="ng-cloak" bindonce>
     <div class="fakeloader"></div> 
-    <nav class="navbar navbar-inverse navbar-fixed-top" ng-if="$state.current.name!='backstage'&&$state.current.name!='insert'&&$state.current.name!='photo'&&$state.current.name!='edit'&&$state.current.name!='edit_about'&&$state.current.name!='message'">
+    <nav class="navbar navbar-inverse navbar-fixed-top" bo-if="$state.current.name!='backstage'&&$state.current.name!='insert'&&$state.current.name!='photo'&&$state.current.name!='edit'&&$state.current.name!='edit_about'&&$state.current.name!='message'">
       <div class="container" >
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">

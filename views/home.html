@@ -1,13 +1,16 @@
 <div class="fakeloader"></div>
 <div class="home ">
-	<div ng-repeat="list in article_list " class="list">
+	<div  ng-repeat="list in article_list " class="list">
 		<div class="d_title">
 			<a href="#/read_article/{{list.objectId}}">{{list.title}}</a>
 		</div>
 		<div class="d_time">
-			<h5 class="d21">作者：JHL 時間：{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}  標籤：
+			<h5 class="d21">作者：JHL 時間：
+			</h5>
+			<h5 bo-text="list.createdAt| date : 'yyyy-MM-dd hh:mm'"></h5>
+			<h5>標籤：
 				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 
-				 <a href="#/class_page/{{list.class}}">&nbsp;{{list.class}}</a>
+				 <a bo-href-i="#/class_page/{{list.class}}">&nbsp;{{list.class}}</a>
 			</h5>
 		</div>	
 		<div class="d_article">
@@ -15,7 +18,7 @@
 			</div>
 		</div>
 		<div class="d_read">
-			<p><a href="#/read_article/{{list.objectId}}" analytics-on="click" analytics-event="點擊文章" analytics-label="{{list.title}}" >...閱讀全文</a></p>
+			<p><a bo-href-i="#/read_article/{{list.objectId}}" analytics-on="click" analytics-event="點擊文章" analytics-label="{{list.title}}" >...閱讀全文</a></p>
 		</div>	
 	</div>
 	<div class="row bottom_page">

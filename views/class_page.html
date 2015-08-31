@@ -5,9 +5,12 @@
 			<a href="#/read_article/{{list.objectId}}">{{list.title}}</a>
 		</div>
 		<div class="d_time">
-			<h5 class="d21">作者：JHL 時間：{{list.createdAt| date : 'yyyy-MM-dd hh:mm'}}  標籤：
+			<h5 class="d21">作者：JHL 時間：
+			</h5>
+			<h5 bo-text="list.createdAt| date : 'yyyy-MM-dd hh:mm'"></h5>
+			<h5>標籤：
 				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 
-				 <a>&nbsp;{{list.class}}</a>
+				 <a href="#/class_page/{{list.class}}">&nbsp;{{list.class}}</a>
 			</h5>
 		</div>	
 		<div class="d_article">
