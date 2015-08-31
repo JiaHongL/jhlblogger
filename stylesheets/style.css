@@ -78,6 +78,32 @@ body p span em {
   height: 100%;
 }
 
+/* line 101, ../sass/partials/_base.scss */
+html, body {
+  height: 100%;
+}
+
+/* give the wrapper a padding-bottom and negative margin-bottom equal to the footer height */
+/* line 107, ../sass/partials/_base.scss */
+.wrapper {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -40px;
+  padding-bottom: 40px;
+}
+
+/* line 113, ../sass/partials/_base.scss */
+.footer {
+  height: 40px;
+}
+/* line 117, ../sass/partials/_base.scss */
+.footer .footer_in {
+  text-align: center;
+  padding-top: 12px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 /* line 33, ../../Desktop/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 article,
 aside,

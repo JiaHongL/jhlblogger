@@ -97,3 +97,32 @@ body {
     width: 100%;
     height: 100%;
 }
+
+html, body {
+    height: 100%;
+}
+
+/* give the wrapper a padding-bottom and negative margin-bottom equal to the footer height */
+
+.wrapper {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -40px;
+    padding-bottom: 40px;
+}
+.footer {
+    height: 40px;
+    // background-color: #ccc;
+    // border-color: #080808;
+    .footer_in{
+		text-align: center;
+		padding-top:12px;
+		font-size: 15px; 
+		font-weight: bold;
+		// color:#666;
+    }
+    
+}
+
+
+
