@@ -660,7 +660,7 @@ body {
 
 /* line 55, ../sass/partials/_home.scss */
 .hiddenOverFlow {
-  height: 150px;
+  height: 100px;
   overflow: hidden;
   /*--設定超出的內容隱藏, IE, FireFox通用--*/
   text-overflow: ellipsis;
