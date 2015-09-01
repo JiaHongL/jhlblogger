@@ -1,9 +1,9 @@
 myApp.controller('photoCtrl', ['$rootScope','$scope','blogger','$location','$http',function ($rootScope,$scope,blogger,$location,$http) {
-  if ($rootScope.$login_stage == undefined || $rootScope.$login_stage == null||$rootScope.$login_stage == ''){
-    $location.path("/home");
-  }else{
-    // console.log('login');  
-  }
+  // if ($rootScope.$login_stage == undefined || $rootScope.$login_stage == null||$rootScope.$login_stage == ''){
+  //   $location.path("/home");
+  // }else{
+  //   // console.log('login');  
+  // }
 
 var get_page = 1;
 var all_limit = 0; 
@@ -12,6 +12,9 @@ var get_load_page = 1;
 var get_max_page = 0;
 var delete_objectid = '';
 $scope.de_title = ''; 
+//顯示幾頁碼
+$scope.maxSize = 10;
+
 
 $('#myButton').on('click', function () {
     var $btn = $(this).button('loading')
@@ -33,17 +36,20 @@ $scope.get_now_photo_page = function() {
   blogger.check_photo_row_api().then(function(res){
   // console.log(res);
   get_max_page = res;
-  var pagearray = new Array(res) ;
-  for (i=0; i<res; i=i+1)
-  {
-    pagearray[i] = {page:i+1};
-  }
-  $scope.page =  pagearray;
+  $scope.bigTotalItems = get_max_page * 10;
+
+  // var pagearray = new Array(res) ;
+  // for (i=0; i<res; i=i+1)
+  // {
+  //   pagearray[i] = {page:i+1};
+  // }
+  // $scope.page =  pagearray;
   });
 };
 $scope.get_now_photo_page();
 
 
+//上傳檔案
 $scope.uploadFile = function(files) {
   $scope.files_img = files;
 };
@@ -84,14 +90,15 @@ $scope.uploadFile2 = function() {
     });
 }
 
-//刪除照片
-
+//刪除照片提示
 $scope.delete_re_tip = function(objectid,title){
   delete_objectid = objectid;
   $scope.de_title = title;
   $('#myModal').modal('toggle')
 };
 
+
+//刪除照片
 $scope.deletephoto = function() {
   blogger.delete_photo_api(delete_objectid).then(function(res){
     $scope.get_now_photo_count();
@@ -115,7 +122,7 @@ $scope.photopage = function(page) {
   // console.log(get_page);
   // console.log(get_limit);
   blogger.photo_api(get_page,get_limit).then(function(res){
-    console.log(res.data.results);
+    // console.log(res.data.results);
     $scope.page_photo = res.data.results;
   });
 };
@@ -126,6 +133,9 @@ $scope.photopage_load= function() {
   blogger.check_photo_row_api().then(function(res){
     // console.log(res);
     get_max_page = res;
+    $scope.bigTotalItems = get_max_page * 10;
+    $scope.bigCurrentPage = get_max_page;
+
     $scope.photopage(get_max_page);
   });
 };
@@ -135,6 +145,9 @@ $scope.photopage_det= function() {
   blogger.check_photo_row_api().then(function(res){
     // console.log(res);
     get_max_page = res;
+    $scope.bigTotalItems = get_max_page * 10;
+    $scope.bigCurrentPage = get_max_page;
+
     if(get_load_page==1){
       $scope.photopage(get_load_page);
     }
@@ -149,11 +162,10 @@ $scope.photopage_det= function() {
 // blogger.files().then(function(res){
 //   console.log(res);
 // });
+  
 
 
-
-// 94c0de81-23b3-4a8c-842f-d063b93005c3
-// 94c0de81-23b3-4a8c-842f-d063b93005c3
-
+  
+  
 }]);
 

@@ -25,11 +25,13 @@
 	</div>
 	<div class="row bottom_page">
 		  <div class="bottom_page_center">
-		  	<ul class="pagination pagination" ng-repeat="list in page">
+		  		 <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" ng-click="photopage(bigCurrentPage)"></pagination> 
+<!-- 		  	<ul class="pagination pagination" ng-repeat="list in page">
 			  <li><a href="#" ng-click="photopage(list.page)">{{list.page}}</a></li>
-			</ul>
+			</ul> -->
 		  </div>
-	</div>	 
+	</div>
+
 </div> 
 
 <div id="myModal" class="modal fade bs-example-modal-sm tip" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">

@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ui.router','ui.tinymce','readMore','ngSanitize','angulartics', 'angulartics.google.analytics','pasvaz.bindonce']); 
+var myApp = angular.module('myApp', ['ui.router','ui.tinymce','readMore','ngSanitize','angulartics', 'angulartics.google.analytics','pasvaz.bindonce','ui.bootstrap']); 
 
 myApp.config(function($stateProvider, $urlRouterProvider,$analyticsProvider) {
 

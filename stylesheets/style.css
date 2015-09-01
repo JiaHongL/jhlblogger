@@ -104,6 +104,11 @@ html, body {
   font-weight: bold;
 }
 
+/* line 127, ../sass/partials/_base.scss */
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer;
+}
+
 /* line 33, ../../Desktop/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 article,
 aside,
