@@ -619,12 +619,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=5);
   /*for ie6,7,8*/
   background-color: #ccc !important;
-  -moz-box-shadow: 4px 4px 10px 2px #969696;
-  /*firefox*/
-  -webkit-box-shadow: 4px 10px 5px 2px #969696;
-  /*webkit*/
-  box-shadow: 4px 4px 10px 2px #969696;
-  /*opera或ie9*/
 }
 /* line 15, ../sass/partials/_home.scss */
 .home .list .d_title a {
@@ -882,12 +876,6 @@ body {
   padding: 1%;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=5);
   /*for ie6,7,8*/
-  -moz-box-shadow: 4px 4px 10px 2px #969696;
-  /*firefox*/
-  -webkit-box-shadow: 4px 10px 5px 2px #969696;
-  /*webkit*/
-  box-shadow: 4px 4px 10px 2px #969696;
-  /*opera或ie9*/
   background-color: #ccc !important;
 }
 /* line 14, ../sass/partials/_class_page.scss */
@@ -929,12 +917,6 @@ body {
   padding: 5% 5% 2% 5%;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=5);
   /*for ie6,7,8*/
-  -moz-box-shadow: 4px 4px 10px 2px #969696;
-  /*firefox*/
-  -webkit-box-shadow: 4px 10px 5px 2px #969696;
-  /*webkit*/
-  box-shadow: 4px 4px 10px 2px #969696;
-  /*opera或ie9*/
   background-color: #ccc !important;
 }
 /* line 14, ../sass/partials/_read_article.scss */
@@ -1011,12 +993,6 @@ body {
   padding: 2% 0% 8% 0%;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=5);
   /*for ie6,7,8*/
-  -moz-box-shadow: 4px 4px 10px 2px #969696;
-  /*firefox*/
-  -webkit-box-shadow: 4px 10px 5px 2px #969696;
-  /*webkit*/
-  box-shadow: 4px 4px 10px 2px #969696;
-  /*opera或ie9*/
 }
 /* line 10, ../sass/partials/_all_article_list.scss */
 .all_article_list .d_title {
