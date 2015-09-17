@@ -565,9 +565,24 @@ myApp.factory('blogger',  [
 				}).then(function(res) {
 					return res;
 				});
-			}
-
-			
+			},
+			get_hot_article: function(){
+				return $http({ 		
+					url:('https://api.parse.com/1/classes/article'),
+					method: 'get',
+					headers: 
+					{ 
+					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
+					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
+					},
+					params:{
+					order:'-hot_count',
+					limit:'3',	
+					},
+				}).then(function(res) {
+		   			return res;
+				});
+			}	
 		};
 	}
 
