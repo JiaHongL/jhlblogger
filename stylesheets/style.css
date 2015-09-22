@@ -460,7 +460,7 @@ body {
   font-family: DFKai-sb;
 }
 
-/* line 58, ../sass/partials/_page.scss */
+/* line 152, ../sass/partials/_page.scss */
 #gotop {
   display: none;
   position: fixed;
@@ -471,7 +471,7 @@ body {
   z-index: 99999;
 }
 
-/* line 71, ../sass/partials/_page.scss */
+/* line 165, ../sass/partials/_page.scss */
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }

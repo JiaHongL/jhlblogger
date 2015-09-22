@@ -31,4 +31,35 @@ $(function(){
 });
 
 
+
+
+
+
+
+// $scope.myInterval = 3000;
+// $scope.noWrapSlides = true;
+// var slides = $scope.slides = [];
+
+// $scope.addSlide = function() {
+//     blogger.get_hot_article().then(function(res){
+//         // console.log(res.data.results);
+//         for (var i=0; i<3; i++) {
+//             slides.push({
+//                   image: '',
+//                   text: res.data.results[i].title ,
+//                   // +' ( '+ res.data.results[i].hot_count +' ) '
+//                   src:res.data.results[i].objectId ,
+//             });
+//         }
+
+//     });
+    
+// };
+
+// $scope.addSlide();
+
+ 
+
+
+
 }]);

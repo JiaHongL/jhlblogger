@@ -126,6 +126,22 @@
         </div>
       </div>
     </nav>
+    <!--Carousel-->
+<!--     <div id="div_carousel" ng-if="$state.current.name=='home'">
+      <carousel interval="myInterval" no-wrap="noWrapSlides">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <a href="#/read_article/{{slide.src}}">
+            <div class="carousel_title">
+              <p>{{slide.text}}</p>
+            </div>
+            <img  alt="First slide" ng-src="img/slide{{$index+1}}.jpg" style="margin:auto;">
+            <div class="carousel-caption">
+              <h1>Top {{$index+1}}</h1>
+            </div>
+          </a>  
+        </slide>
+      </carousel>
+    </div> -->
     <!--gototop-->
     <div id="gotop"><i class="fa fa-chevron-circle-up fa-2x"></i></div>
     <!--主要內容-->
@@ -140,7 +156,6 @@
         Copyright ©2015 JHL All rights reserved
       </div>
     </footer>
-
     <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
     <script src="javascripts/tinymce.js"></script>
     <script src="javascripts/angular-readmore.js"></script>
