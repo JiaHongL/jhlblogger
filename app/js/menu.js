@@ -36,8 +36,8 @@ $(function(){
 
 
 
-// $scope.myInterval = 3000;
-// $scope.noWrapSlides = true;
+// $scope.myInterval = 4000;
+// $scope.noWrapSlides = false;
 // var slides = $scope.slides = [];
 
 // $scope.addSlide = function() {

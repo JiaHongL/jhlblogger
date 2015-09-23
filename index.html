@@ -127,16 +127,14 @@
       </div>
     </nav>
     <!--Carousel-->
-<!--     <div id="div_carousel" ng-if="$state.current.name=='home'">
+    <!-- <div id="div_carousel" ng-if="$state.current.name=='home'">
       <carousel interval="myInterval" no-wrap="noWrapSlides">
         <slide ng-repeat="slide in slides" active="slide.active">
           <a href="#/read_article/{{slide.src}}">
-            <div class="carousel_title">
-              <p>{{slide.text}}</p>
-            </div>
             <img  alt="First slide" ng-src="img/slide{{$index+1}}.jpg" style="margin:auto;">
             <div class="carousel-caption">
-              <h1>Top {{$index+1}}</h1>
+              <h2>Top {{$index+1}}</h2>
+              <h2>{{slide.text}}</h2>
             </div>
           </a>  
         </slide>
