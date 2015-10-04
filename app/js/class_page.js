@@ -27,6 +27,8 @@ $scope.get_now_class_page($stateParams.class);
 $scope.get_now_class_count = function() {
   blogger.get_all_class_count($stateParams.class).then(function(res){
     all_limit = res;
+    $scope.iflimit = res;
+    // console.log($scope.iflimit);
   });
 };
 $scope.get_now_class_count($stateParams.class);

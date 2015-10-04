@@ -1,5 +1,5 @@
 <div class="fakeloader"></div>
-<div class="class_page ">
+<div class="class_page " ng-if="iflimit>'0'">
 	<div ng-repeat="list in article_list " class="list">
 		<div class="d_title">
 			<a href="#/read_article/{{list.objectId}}">{{list.title}}</a>
@@ -28,6 +28,11 @@
       </ul>
       </div>
     </div>
+</div>
+<div class="class_page " ng-if="iflimit=='0'">
+	<div style="text-align:center;margin-top:20%;">
+		<h1>Sorry...目前無相關文章</h1>
+	</div>
 </div>
 <script>  
       $(document).ready(function(){
