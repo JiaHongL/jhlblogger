@@ -1,4 +1,5 @@
 myApp.controller('read_articleCtrl', ['$rootScope','$scope','blogger','$location','$stateParams','$sce',function ($rootScope,$scope,blogger,$location,$stateParams,$sce) {
+$scope.is_read_page = false;
 $scope.article_title = '';
 $('#myButton').on('click', function () {
     var $btn = $(this).button('loading')
@@ -17,6 +18,7 @@ blogger.get_read_article($stateParams.id).then(function(res){
 blogger.get_message($stateParams.id).then(function(res){
 	// console.log(res);
 	$scope.message_list =res.data.results;
+	$scope.is_read_page = true;
 });
 
 $scope.get_message_again = function () {

@@ -1,6 +1,6 @@
 <div class="fakeloader"></div>
-<div class="home ">
-	<div  ng-repeat="list in article_list " class="list">
+<div class="home " ng-if="is_home_page">
+	<div  ng-repeat="list in article_list track by list.objectId" class="list">
 		<div class="d_title">
 			<a href="#/read_article/{{list.objectId}}">{{list.title}}</a>
 		</div>

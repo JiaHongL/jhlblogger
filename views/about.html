@@ -1,5 +1,5 @@
 <div class="fakeloader"></div>
-<div class="out " >
+<div class="out " ng-if="is_about_page">
 	<div class="row">
 	  <div class="col-md-12">
 	  		<div class="blush">
@@ -28,7 +28,7 @@
 <script>  
       $(document).ready(function(){
           $(".fakeloader").fakeLoader({
-              timeToHide:1200,
+              timeToHide:600,
               bgColor:"#666",
               spinner:"spinner1"
           });

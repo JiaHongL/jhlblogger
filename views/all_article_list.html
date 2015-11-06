@@ -1,9 +1,9 @@
 <div class="fakeloader"></div>
-<div class="all_article_list ">
+<div class="all_article_list" ng-if="is_all_list">
 	<div class="d_title">
 		<h1>全部文章</h1>
 	</div>
-	<div ng-repeat="list in article_list " class="list">
+	<div ng-repeat="list in article_list track by list.objectId" class="list">
 		<div class="d_time">
 			<a href="#/read_article/{{list.objectId}}" analytics-on="click" analytics-event="點擊文章" analytics-label="{{list.title}}" >
 			<span bo-text="list.createdAt| date : 'yyyy-MM-dd'"></span>&nbsp;&nbsp;{{list.title}}

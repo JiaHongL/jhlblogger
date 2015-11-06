@@ -6,7 +6,7 @@ var get_load_page = 1;
 var get_max_page = 0;
 var delete_objectid = '';  
 var edit_objectid = ''
-
+$scope.is_home_page = false;
 
 //取得頁碼
 $scope.get_now_edit_page = function() {
@@ -44,6 +44,7 @@ $scope.photopage = function(page) {
   blogger.get_article(get_page,get_limit).then(function(res){
     // console.log(res.data.results);
     $scope.article_list = res.data.results;
+    $scope.is_home_page = true;
   });
 };
 $scope.photopage(1);

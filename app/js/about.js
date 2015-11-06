@@ -1,5 +1,5 @@
 myApp.controller('aboutCtrl', ['$scope','blogger','$rootScope',function ($scope,blogger,$rootScope) {
-
+	$scope.is_about_page = false;
 	blogger.about_api().then(function(res){
 		 // console.log(res.data.results[0]);
 		 $scope.intro_img = res.data.results[0].photo.url;
@@ -8,6 +8,7 @@ myApp.controller('aboutCtrl', ['$scope','blogger','$rootScope',function ($scope,
 		 $scope.intro_skill = res.data.results[0].skill;
 		 $scope.intro_me = res.data.results[0].intro;
 		 $scope.intro_version = res.data.results[0].version;
+		 $scope.is_about_page = true;
 	});
 
 }]);
