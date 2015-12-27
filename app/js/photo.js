@@ -63,6 +63,8 @@ $scope.uploadFile2 = function() {
 	});
 
 	var files = $scope.files_img;
+  console.log(angular.identity);
+  console.log(files);
     $http.post("https://api.parse.com/1/files/" + files[0].name, files[0], {
            withCredentials: false,
            headers: {
