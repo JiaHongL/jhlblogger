@@ -3,7 +3,7 @@
 	<div class="load">
 		<div class="form-group from1">
 		    <label for="exampleInputFile">選擇上傳圖片</label>
-		    <input type="file" name="file"/>
+		      <input type="file" name="file" onchange="angular.element(this).scope().uploadFile(this.files)"/>
 		</div>
 		<div class="btn2">
 			<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary " ng-click="uploadFile2()" autocomplete="off">
