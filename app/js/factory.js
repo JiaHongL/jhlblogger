@@ -68,8 +68,6 @@ myApp.factory('blogger',  [
 					{ 
 					'X-Parse-Application-Id':'34sghQR7LXBwNJfUBuJ5zBowHbRf450n50jGozl8', 
 					'X-Parse-REST-API-Key':'90AEj0V5L6WtvPLdHn6aQdIlWZxMYRDWmkpYEoMg',
-					'Content-Type': 'itext/plain',
-					'charset':'UTF-8'
 					},
 					 data:
 					 { 
